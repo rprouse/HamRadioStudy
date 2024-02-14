@@ -1,7 +1,7 @@
 using HamRadioStudy.Client.Pages;
 using HamRadioStudy.Components;
 using HamRadioStudy.Components.Account;
-using HamRadioStudy.Data;
+using HamRadioStudy.Common.Data;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

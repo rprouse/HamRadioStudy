@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamRadioStudy", "HamRadioStudy\HamRadioStudy\HamRadioStudy.csproj", "{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamRadioStudy", "HamRadioStudy\HamRadioStudy\HamRadioStudy.csproj", "{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamRadioStudy.Client", "HamRadioStudy\HamRadioStudy.Client\HamRadioStudy.Client.csproj", "{B3B43C12-232B-480C-AD13-D4B28E067EB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamRadioStudy.Client", "HamRadioStudy\HamRadioStudy.Client\HamRadioStudy.Client.csproj", "{B3B43C12-232B-480C-AD13-D4B28E067EB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertTestQuestions", "ConvertTestQuestions\ConvertTestQuestions.csproj", "{9FDC5001-D03A-4CE9-9DC8-6604E3729911}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertTestQuestions", "ConvertTestQuestions\ConvertTestQuestions.csproj", "{9FDC5001-D03A-4CE9-9DC8-6604E3729911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamRadioStudy.Common", "HamRadioStudy.Common\HamRadioStudy.Common.csproj", "{99FB1E17-1617-4D3A-8396-284FF1742068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HamRadioStudy.Common", "HamRadioStudy.Common\HamRadioStudy.Common.csproj", "{99FB1E17-1617-4D3A-8396-284FF1742068}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2DD64083-0ACA-4B00-8290-D5D643F1BC82}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

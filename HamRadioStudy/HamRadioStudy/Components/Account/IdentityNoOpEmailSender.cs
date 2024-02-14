@@ -1,4 +1,4 @@
-using HamRadioStudy.Data;
+using HamRadioStudy.Common.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 

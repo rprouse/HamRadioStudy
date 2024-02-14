@@ -2,7 +2,7 @@ using System.Security.Claims;
 using System.Text.Json;
 using HamRadioStudy.Components.Account.Pages;
 using HamRadioStudy.Components.Account.Pages.Manage;
-using HamRadioStudy.Data;
+using HamRadioStudy.Common.Data;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http.Extensions;
