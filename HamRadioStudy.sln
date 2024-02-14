@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamRadioStudy", "HamRadioStudy\HamRadioStudy\HamRadioStudy.csproj", "{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamRadioStudy.Client", "HamRadioStudy\HamRadioStudy.Client\HamRadioStudy.Client.csproj", "{B3B43C12-232B-480C-AD13-D4B28E067EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertTestQuestions", "ConvertTestQuestions\ConvertTestQuestions.csproj", "{9FDC5001-D03A-4CE9-9DC8-6604E3729911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HamRadioStudy.Common", "HamRadioStudy.Common\HamRadioStudy.Common.csproj", "{99FB1E17-1617-4D3A-8396-284FF1742068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68B8135-FF8A-4137-A9FD-8C7B027F9F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B43C12-232B-480C-AD13-D4B28E067EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B43C12-232B-480C-AD13-D4B28E067EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B43C12-232B-480C-AD13-D4B28E067EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B43C12-232B-480C-AD13-D4B28E067EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FDC5001-D03A-4CE9-9DC8-6604E3729911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FDC5001-D03A-4CE9-9DC8-6604E3729911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FDC5001-D03A-4CE9-9DC8-6604E3729911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FDC5001-D03A-4CE9-9DC8-6604E3729911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FB1E17-1617-4D3A-8396-284FF1742068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FB1E17-1617-4D3A-8396-284FF1742068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FB1E17-1617-4D3A-8396-284FF1742068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FB1E17-1617-4D3A-8396-284FF1742068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACFD4B4B-B093-46CC-8A8C-65449E3BCEF7}
+	EndGlobalSection
+EndGlobal
