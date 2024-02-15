@@ -30,13 +30,18 @@ var questions = reader.ReadToEnd()
     .OrderBy(q => rand.Next())
     .ToList();
 
+int completed = 0;
+int correct = 0;
 foreach (var question in questions)
 {
     int answer = OutputQuestion(question);
-    if (OutputAnswer(question, answer))
-    {
+
+    completed++;
+    if (answer == question.CorrectAnswer)
+        correct++;
+
+    if (OutputAnswer(question, answer, correct, completed))
         break;
-    }
 }
 
 static int OutputQuestion(Question question)
@@ -66,7 +71,7 @@ static int OutputQuestion(Question question)
     return char.ToLower(answer) - 'a';
 }
 
-static bool OutputAnswer(Question question, int answer)
+static bool OutputAnswer(Question question, int answer, int correct, int completed)
 {
     AnsiConsole.Clear();
     AnsiConsole.MarkupLine($"[aqua]{question.Id}[/]");
@@ -87,6 +92,9 @@ static bool OutputAnswer(Question question, int answer)
             AnsiConsole.MarkupLine($"  [aqua]{(char)('A' + i)}.[/] [silver]{question.Answers[i]}[/]");
         }
     }
+
+    AnsiConsole.WriteLine();
+    AnsiConsole.MarkupLine($"[red][[{correct}/{completed}]] {(double)correct / completed * 100.0:F0}%[/]");
     AnsiConsole.WriteLine();
     AnsiConsole.Markup("[green]>[/] ");
 
