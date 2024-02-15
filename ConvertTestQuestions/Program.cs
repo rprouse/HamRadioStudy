@@ -1,6 +1,7 @@
 // Pars data/amat_basic_quest_delim.txt into a list of questions
 
 using HamRadioStudy.Entities;
+using Spectre.Console;
 
 var rand = new Random(Environment.TickCount);
 bool isEnglish = args.Length == 0;
@@ -9,9 +10,9 @@ int offset = isEnglish ? 0 : 5;
 // Load basic_questions.txt into a list of questions from a resource file
 var assembly = typeof(Program).Assembly;
 var resourceStream = assembly.GetManifestResourceStream("HamRadioStudy.Resources.basic_questions.txt");
-if (resourceStream == null)
+if (resourceStream is null)
 {
-    Console.WriteLine("Resource not found");
+    AnsiConsole.MarkupLine("❌ [Red]Resource not found[/]");
     return;
 }
 
@@ -31,7 +32,65 @@ var questions = reader.ReadToEnd()
 
 foreach (var question in questions)
 {
-    Console.WriteLine(question);
-    Console.WriteLine("Press Enter for the next question");
-    Console.ReadLine();
+    int answer = OutputQuestion(question);
+    if (OutputAnswer(question, answer))
+    {
+        break;
+    }
+}
+
+static int OutputQuestion(Question question)
+{
+    AnsiConsole.Clear();
+    AnsiConsole.MarkupLine($"[aqua]{question.Id}[/]");
+    AnsiConsole.MarkupLine($"[white]{question.QuestionText}[/]");
+    AnsiConsole.WriteLine();
+    for (int i = 0; i < 4; i++)
+    {
+        AnsiConsole.MarkupLine($"  [aqua]{(char)('A' + i)}.[/] [silver]{question.Answers[i]}[/]");
+    }
+    AnsiConsole.WriteLine();
+
+    char answer = AnsiConsole.Prompt(
+        new TextPrompt<char>("[green]?[/] ")
+            .PromptStyle("green")
+            .Validate(choice =>
+            {
+                return char.ToLower(choice) switch
+                {
+                    < 'a' or > 'd' => ValidationResult.Error("[red]That's not a valid answer[/]"),
+                    _ => ValidationResult.Success(),
+                };
+            }));
+
+    return char.ToLower(answer) - 'a';
+}
+
+static bool OutputAnswer(Question question, int answer)
+{
+    AnsiConsole.Clear();
+    AnsiConsole.MarkupLine($"[aqua]{question.Id}[/]");
+    AnsiConsole.MarkupLine($"[white]{question.QuestionText}[/]");
+    AnsiConsole.WriteLine();
+    for (int i = 0; i < 4; i++)
+    {
+        if (i == question.CorrectAnswer)
+        {
+            AnsiConsole.MarkupLine($" :green_circle:[lime]{(char)('A' + i)}.[/] [green]{question.Answers[i]}[/]");
+        }
+        else if (i == answer && answer != question.CorrectAnswer)
+        {
+            AnsiConsole.MarkupLine($" :red_circle:[red]{(char)('A' + i)}.[/] [red3_1]{question.Answers[i]}[/]");
+        }
+        else
+        {
+            AnsiConsole.MarkupLine($"  [aqua]{(char)('A' + i)}.[/] [silver]{question.Answers[i]}[/]");
+        }
+    }
+    AnsiConsole.WriteLine();
+    AnsiConsole.Markup("[green]>[/] ");
+
+    var response = Console.ReadLine();
+
+    return response?.ToLower().FirstOrDefault() == 'q';
 }
