@@ -1,6 +1,6 @@
 // Pars data/amat_basic_quest_delim.txt into a list of questions
 
-using HamRadioStudy.Common.Data;
+using HamRadioStudy.Entities;
 
 bool isEnglish = true;
 int offset = isEnglish ? 0 : 5;

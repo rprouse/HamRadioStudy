@@ -5,14 +5,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <RootNamespace>HamRadioStudy</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="data\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HamRadioStudy.Common\HamRadioStudy.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>
