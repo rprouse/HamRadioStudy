@@ -22,6 +22,9 @@ public class Question
         Answers = new string[4];
 
         CorrectAnswer = rand.Next(4);
+
+        // Fill the answers array with the correct answer and the incorrect answers
+        // The correct answer is placed at the index of CorrectAnswer
         for (int i = 0, j = 0; i < 4; i++)
         {
             if (i == CorrectAnswer)
@@ -35,16 +38,5 @@ public class Question
         }
     }
 
-    public override string ToString()
-    {
-        StringBuilder sb = new();
-        sb.AppendLine(Id);
-        sb.AppendLine(QuestionText);
-        for (int i = 0; i < 4; i++)
-        {
-            char c = i == CorrectAnswer ? '*' : ' ';
-            sb.AppendLine($" {c}{(char)('A' + i)}. {Answers[i]}");
-        }
-        return sb.ToString();
-    }
+    public override string ToString() => $"{Id}: {QuestionText}";
 }
