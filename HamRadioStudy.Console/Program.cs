@@ -1,47 +1,30 @@
 // Pars data/amat_basic_quest_delim.txt into a list of questions
 
 using HamRadioStudy.Core.Entities;
+using HamRadioStudy.Core.Services;
 using Spectre.Console;
 
-var rand = new Random(Environment.TickCount);
-bool isEnglish = args.Length == 0;
-int offset = isEnglish ? 0 : 5;
-
-// Load basic_questions.txt into a list of questions from a resource file
-var assembly = typeof(Question).Assembly;
-var resourceStream = assembly.GetManifestResourceStream("HamRadioStudy.Core.Resources.basic_questions.txt");
-if (resourceStream is null)
+try
 {
-    AnsiConsole.MarkupLine("❌ [Red]Resource not found[/]");
-    return;
+    QuestionService service = new(true);
+
+    int completed = 0;
+    int correct = 0;
+    foreach (var question in service.AllQuestions)
+    {
+        int answer = OutputQuestion(question);
+
+        completed++;
+        if (answer == question.CorrectAnswer)
+            correct++;
+
+        if (OutputAnswer(question, answer, correct, completed))
+            break;
+    }
 }
-
-using var reader = new StreamReader(resourceStream);
-var questions = reader.ReadToEnd()
-    .Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
-    .Skip(1)
-    .Select(line => line.Split(';'))
-    .Select(parts => new Question(
-        parts[0 + offset],
-        parts[1 + offset],
-        parts[2 + offset],
-        parts.Skip(3 + offset).Take(3).ToArray()
-    ))
-    .OrderBy(q => rand.Next())
-    .ToList();
-
-int completed = 0;
-int correct = 0;
-foreach (var question in questions)
+catch (Exception ex)
 {
-    int answer = OutputQuestion(question);
-
-    completed++;
-    if (answer == question.CorrectAnswer)
-        correct++;
-
-    if (OutputAnswer(question, answer, correct, completed))
-        break;
+    AnsiConsole.WriteException(ex);
 }
 
 static int OutputQuestion(Question question)
