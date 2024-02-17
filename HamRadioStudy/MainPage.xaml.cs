@@ -1,24 +1,21 @@
-﻿namespace HamRadioStudy
+using HamRadioStudy.Core.Services;
+
+namespace HamRadioStudy
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private readonly QuestionService _questionService = new QuestionService(true);
 
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnAllQuestionsClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            // Navigate to the QuestionsPage
+            var page = new QuestionsPage(_questionService.AllQuestions, "All Questions");
+            await Navigation.PushAsync(page);
         }
     }
 
