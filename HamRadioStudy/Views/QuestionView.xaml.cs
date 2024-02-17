@@ -37,12 +37,12 @@ public partial class QuestionView : ContentView
         if (question.CorrectAnswer == answer)
         {
             // Correct answer
-            button.BackgroundColor = Colors.LightGreen;
+            button.BackgroundColor = Color.FromArgb("#70EE9C");
         }
         else
         {
             // Incorrect answer
-            button.BackgroundColor = Colors.LightCoral;
+            button.BackgroundColor = Color.FromArgb("#DB3A34");
 
             // Highlight the correct answer
             Button? correctButton = question.CorrectAnswer switch
@@ -56,7 +56,7 @@ public partial class QuestionView : ContentView
 
             if (correctButton is not null)
             {
-                correctButton.BackgroundColor = Colors.LightGreen;
+                correctButton.BackgroundColor = Color.FromArgb("#70EE9C");
             }
         }
     }
@@ -67,9 +67,16 @@ public partial class QuestionView : ContentView
 
         _answered = false;
 
-        AnswerA.BackgroundColor = Colors.LightBlue;
-        AnswerB.BackgroundColor = Colors.LightBlue;
-        AnswerC.BackgroundColor = Colors.LightBlue;
-        AnswerD.BackgroundColor = Colors.LightBlue;
+        var buttonColor = Application.Current?.RequestedTheme switch
+        {
+            AppTheme.Dark => Color.FromArgb("#9BD1E5"),
+            AppTheme.Light => Color.FromArgb("#484041"),
+            _ => Color.FromArgb("#9BD1E5")
+        };
+
+        AnswerA.BackgroundColor = buttonColor;
+        AnswerB.BackgroundColor = buttonColor;
+        AnswerC.BackgroundColor = buttonColor;
+        AnswerD.BackgroundColor = buttonColor;
     }
 }
