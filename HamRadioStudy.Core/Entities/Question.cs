@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace HamRadioStudy.Entities;
+namespace HamRadioStudy.Core.Entities;
 
 public class Question
 {

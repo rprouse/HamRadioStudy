@@ -1,6 +1,6 @@
 // Pars data/amat_basic_quest_delim.txt into a list of questions
 
-using HamRadioStudy.Entities;
+using HamRadioStudy.Core.Entities;
 using Spectre.Console;
 
 var rand = new Random(Environment.TickCount);
@@ -8,8 +8,8 @@ bool isEnglish = args.Length == 0;
 int offset = isEnglish ? 0 : 5;
 
 // Load basic_questions.txt into a list of questions from a resource file
-var assembly = typeof(Program).Assembly;
-var resourceStream = assembly.GetManifestResourceStream("HamRadioStudy.Resources.basic_questions.txt");
+var assembly = typeof(Question).Assembly;
+var resourceStream = assembly.GetManifestResourceStream("HamRadioStudy.Core.Resources.basic_questions.txt");
 if (resourceStream is null)
 {
     AnsiConsole.MarkupLine("❌ [Red]Resource not found[/]");
