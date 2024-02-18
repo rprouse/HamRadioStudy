@@ -1,4 +1,5 @@
 using HamRadioStudy.Core.Entities;
+using HamRadioStudy.Models;
 using HamRadioStudy.ViewModels;
 
 namespace HamRadioStudy;
@@ -7,6 +8,8 @@ public partial class QuestionsPage : ContentPage
 {
     private readonly Queue<Question> _questions;
     private readonly NavigationViewModel _navViewModel;
+    private readonly StudyDatabase _studyDatabase = new StudyDatabase();
+
 
     public QuestionsPage(IEnumerable<Question> questions, string title)
 	{
@@ -19,25 +22,37 @@ public partial class QuestionsPage : ContentPage
         NavigationView.BindingContext = _navViewModel;
 
         // Set the first question
-        NextQuestion();
+        if (_questions.Count > 0)
+            SetNextQuestion();
     }
 
-    public void NextQuestion()
+    public async Task NextQuestion()
     {
         if (_questions.Count == 0)
         {
             // No more questions
-            // TODO: Show the score
+            await DisplayAlert("Final Score", $"Your score is {_navViewModel.PercentScore:F0}%", "OK");
             return;
         }
+        SetNextQuestion();
+    }
 
+    private void SetNextQuestion()
+    {
         _navViewModel.QuestionAnswered = false;
         var question = _questions.Dequeue();
         QuestionView.BindingContext = question;
     }
 
-    public void AnswerQuestion(bool correct)
+    public async Task AnswerQuestion(bool correct)
     {
+        var question = (Question)QuestionView.BindingContext;
+        if (question is not null)
+        {
+            AnsweredQuestion answeredQuestion = new (question, correct);
+            await _studyDatabase.SaveAnsweredQuestion(answeredQuestion);
+            await Navigation.PopAsync();
+        }
         _navViewModel.QuestionAnswered = true;
         _navViewModel.AddAnswer(correct);
     }

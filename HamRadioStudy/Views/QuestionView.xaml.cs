@@ -1,4 +1,3 @@
-using System.Windows.Input;
 using HamRadioStudy.Core.Entities;
 using HamRadioStudy.Extensions;
 
@@ -35,7 +34,7 @@ public partial class QuestionView : ContentView
         _incorrectColor = Color.FromArgb("#DB3A34");
     }
 
-    private void OnAnswerClicked(object sender, EventArgs e)
+    private async void OnAnswerClicked(object sender, EventArgs e)
     {
         if (BindingContext is not Question question ||
             sender is not Button button ||
@@ -84,7 +83,9 @@ public partial class QuestionView : ContentView
         }
 
         // Notify the parent QuestionsPage that an answer was given
-        this.GetParentOfType<QuestionsPage>()?.AnswerQuestion(question.CorrectAnswer == answer);
+        var parent = this.GetParentOfType<QuestionsPage>();
+        if (parent is not null)
+            await parent.AnswerQuestion(question.CorrectAnswer == answer);
     }
 
     protected override void OnBindingContextChanged()

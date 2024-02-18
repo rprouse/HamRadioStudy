@@ -9,8 +9,10 @@ public partial class NavigationView : ContentView
         InitializeComponent();
     }
 
-    private void OnNextClicked(object sender, EventArgs e)
+    private async void OnNextClicked(object sender, EventArgs e)
     {
-        this.GetParentOfType<QuestionsPage>()?.NextQuestion();
+        var parent = this.GetParentOfType<QuestionsPage>();
+        if (parent is not null)
+            await parent.NextQuestion();
     }
 }

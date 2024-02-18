@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HamRadioStudy.Views.NavigationView">
+             xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
+             x:Class="HamRadioStudy.Views.NavigationView"
+             x:DataType="vm:NavigationViewModel">
   <Grid Margin="30,0,30,0" HorizontalOptions="FillAndExpand">
     <Grid.RowDefinitions>
       <RowDefinition Height="*" />
