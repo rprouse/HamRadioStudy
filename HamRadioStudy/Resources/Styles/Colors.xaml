@@ -21,6 +21,7 @@
   <Color x:Key="DelftBlue">#434371</Color>
   <Color x:Key="LightBlue">#9BD1E5</Color>
   <Color x:Key="LightGreen">#70EE9C</Color>
+  <Color x:Key="DarkGreen">#4CA169</Color>
   <Color x:Key="Peach">#FFC49B</Color>
   <Color x:Key="Poppy">#DB3A34</Color>
 

@@ -184,14 +184,14 @@
   </Style>
 
   <Style TargetType="Label" x:Key="Headline">
-    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource DelftBlue}, Dark={StaticResource LightBlue}}" />
+    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource OffBlack}, Dark={StaticResource OffWhite}}" />
     <Setter Property="FontSize" Value="32" />
     <Setter Property="HorizontalOptions" Value="Center" />
     <Setter Property="HorizontalTextAlignment" Value="Center" />
   </Style>
 
   <Style TargetType="Label" x:Key="SubHeadline">
-    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource DelftBlue}, Dark={StaticResource OffWhite}}" />
+    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource OffBlack}, Dark={StaticResource OffWhite}}" />
     <Setter Property="FontSize" Value="24" />
     <Setter Property="HorizontalOptions" Value="Center" />
     <Setter Property="HorizontalTextAlignment" Value="Center" />
@@ -339,7 +339,7 @@
   </Style>
 
   <Style TargetType="SwipeItem">
-    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource OffBlack}}" />
+    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource VanDyke}}" />
   </Style>
 
   <Style TargetType="Switch">
@@ -394,30 +394,30 @@
 
   <Style TargetType="Page" ApplyToDerivedTypes="True">
     <Setter Property="Padding" Value="0"/>
-    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource OffBlack}}" />
+    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource VanDyke}}" />
   </Style>
 
   <Style TargetType="Shell" ApplyToDerivedTypes="True">
-    <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource OffBlack}}" />
+    <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource VanDyke}}" />
     <Setter Property="Shell.ForegroundColor" Value="{OnPlatform WinUI={StaticResource Primary}, Default={StaticResource OffWhite}}" />
     <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource OffBlack}, Dark={StaticResource LightBlue}}" />
     <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
     <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray200}}" />
     <Setter Property="Shell.NavBarHasShadow" Value="False" />
-    <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource OffBlack}}" />
+    <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource VanDyke}}" />
     <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light={StaticResource Poppy}, Dark={StaticResource OffWhite}}" />
     <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light={StaticResource Poppy}, Dark={StaticResource OffWhite}}" />
     <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light={StaticResource Gray900}, Dark={StaticResource Gray200}}" />
   </Style>
 
   <Style TargetType="NavigationPage">
-    <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource OffBlack}}" />
+    <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource VanDyke}}" />
     <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource OffWhite}}" />
     <Setter Property="IconColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource OffWhite}}" />
   </Style>
 
   <Style TargetType="TabbedPage">
-    <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource Gray950}}" />
+    <Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource LightBlue}, Dark={StaticResource Gray950}}" />
     <Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Poppy}, Dark={StaticResource OffWhite}}" />
     <Setter Property="UnselectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray200}, Dark={StaticResource Gray950}}" />
     <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />

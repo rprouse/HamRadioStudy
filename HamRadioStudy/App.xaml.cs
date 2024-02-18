@@ -1,4 +1,4 @@
-﻿namespace HamRadioStudy
+namespace HamRadioStudy
 {
     public partial class App : Application
     {
