@@ -14,23 +14,26 @@
     <Label VerticalOptions="Center"
            HorizontalOptions="Start"
            FontSize="18"
+           LineBreakMode="WordWrap"
            Grid.Row="0"
            Grid.Column="0" >
       <Label.Text>
-        <MultiBinding StringFormat="{}Score: {0}/{1} {2:F1}%">
+        <MultiBinding StringFormat="{}Score: {0:F0}% correct ({1} of {2})">
+          <Binding Path="PercentScore" />
           <Binding Path="Correct" />
           <Binding Path="Total" />
-          <Binding Path="OverallPercent" />
         </MultiBinding>
       </Label.Text>
     </Label>
     <Label VerticalOptions="Center"
            HorizontalOptions="Start"
            FontSize="18"
+           LineBreakMode="WordWrap"
            Grid.Row="1"
            Grid.Column="0" >
       <Label.Text>
-        <MultiBinding StringFormat="{}{0} of {1} questions complete">
+        <MultiBinding StringFormat="{}Complete: {0:F1}% answered ({1} of {2})">
+          <Binding Path="OverallPercentComplete" />
           <Binding Path="Total" />
           <Binding Path="OverallTotal" />
         </MultiBinding>
@@ -38,6 +41,7 @@
     </Label>
     <Button
       x:Name="NextButton"
+      IsEnabled="{Binding QuestionAnswered}"
       Grid.Row="0"
       Grid.Column="1"
       Grid.RowSpan="2"
