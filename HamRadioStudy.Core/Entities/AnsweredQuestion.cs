@@ -1,6 +1,7 @@
+using System.Diagnostics.CodeAnalysis;
 using HamRadioStudy.Core.Entities;
 
-namespace HamRadioStudy.Models;
+namespace HamRadioStudy.Core.Models;
 
 public class AnsweredQuestion
 {
@@ -21,4 +22,13 @@ public class AnsweredQuestion
         IsCorrect = isCorrect;
         AnsweredAt = DateTimeOffset.Now;
     }
+}
+
+public class AnsweredQuestionComparer : IEqualityComparer<AnsweredQuestion>
+{ 
+    public bool Equals(AnsweredQuestion? x, AnsweredQuestion? y) =>
+        x?.QuestionId == y?.QuestionId;
+
+    public int GetHashCode([DisallowNull] AnsweredQuestion obj) =>
+        obj.QuestionId.GetHashCode();
 }

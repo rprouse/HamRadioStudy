@@ -1,21 +1,16 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HamRadioStudy.Models;
+using System.Diagnostics.CodeAnalysis;
+using HamRadioStudy.Core.Interfaces;
+using HamRadioStudy.Core.Models;
 using SQLite;
 
 namespace HamRadioStudy
 {
-    internal class StudyDatabase
+    internal class StudyDatabase : IStudyDatabase
     {
-        SQLiteAsyncConnection _db;
+        SQLiteAsyncConnection? _db;
 
-        public StudyDatabase()
-        {
-        }
-
+        [MemberNotNull(nameof(_db))]
         async Task Init()
         {
             if (_db is not null)
@@ -44,6 +39,17 @@ namespace HamRadioStudy
         {
             await Init();
             return await _db.Table<AnsweredQuestion>().Where(a => a.IsCorrect).CountAsync();
+        }
+
+        public async Task<IList<AnsweredQuestion>> GetIncorrectlyAnsweredQuestions()
+        {
+            await Init();
+            var incorrect = await _db
+                .Table<AnsweredQuestion>()
+                .Where(a => !a.IsCorrect)
+                .OrderBy(a => a.AnsweredAt)
+                .ToListAsync();
+            return incorrect.Distinct(new AnsweredQuestionComparer()).ToList();
         }
     }
 }

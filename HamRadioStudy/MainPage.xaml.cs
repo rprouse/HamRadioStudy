@@ -4,20 +4,25 @@ namespace HamRadioStudy;
 
 public partial class MainPage : ContentPage
 {
-    private readonly QuestionService _questionService = new QuestionService(true);
-    private readonly StudyDatabase _studyDatabase = new StudyDatabase();
+    private readonly QuestionService _questionService;
+    private readonly StudyDatabase _studyDatabase = new ();
 
     public MainPage()
     {
         InitializeComponent();
+        _questionService = new QuestionService(_studyDatabase);
         NumberOfQuestionsPicker.SelectedIndex = 0;
     }
 
     private async void OnPracticeExamClicked(object sender, EventArgs e)
     {
-        int correctAnswers = await _studyDatabase.GetCorrectAnswers();
-        int answeredQuestions = await _studyDatabase.GetAnsweredQuestions();
         var page = new QuestionsPage(_questionService.PracticeExam(), "Practice Exam");
+        await Navigation.PushAsync(page);
+    }
+
+    private async void OnPracticeIncorrectClicked(object sender, EventArgs e)
+    {
+        var page = new QuestionsPage(await _questionService.GetQuestionsAnsweredIncorrectly(), "Practice Exam");
         await Navigation.PushAsync(page);
     }
 

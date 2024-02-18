@@ -1,13 +1,15 @@
 using HamRadioStudy.Core.Entities;
+using HamRadioStudy.Core.Interfaces;
 
 namespace HamRadioStudy.Core.Services;
 
 public class QuestionService
 {
-    static readonly Random _rand = new(Environment.TickCount);
+    static readonly Random _rand = new (Environment.TickCount);
     private readonly List<Question> _questions;
+    private readonly IStudyDatabase _studyDatabase;
 
-    public QuestionService(bool english)
+    public QuestionService(IStudyDatabase studyDatabase, bool english = true)
     {
         int offset = english ? 0 : 5;
 
@@ -31,6 +33,7 @@ public class QuestionService
                 parts.Skip(3 + offset).Take(3).ToArray()
             ))
             .ToList();
+        _studyDatabase = studyDatabase;
     }
 
     /// <summary>
@@ -59,5 +62,11 @@ public class QuestionService
                 yield return category.ElementAt(_rand.Next(category.Count()));
             }
         }
+    }
+
+    public async Task<IEnumerable<Question>> GetQuestionsAnsweredIncorrectly()
+    {
+        var incorrect = await _studyDatabase.GetIncorrectlyAnsweredQuestions();
+        return incorrect.Select(i => _questions.First(q => q.Id == i.QuestionId));
     }
 }

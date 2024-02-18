@@ -1,5 +1,5 @@
 using HamRadioStudy.Core.Entities;
-using HamRadioStudy.Models;
+using HamRadioStudy.Core.Models;
 using HamRadioStudy.ViewModels;
 
 namespace HamRadioStudy;
@@ -32,6 +32,7 @@ public partial class QuestionsPage : ContentPage
         {
             // No more questions
             await DisplayAlert("Final Score", $"Your score is {_navViewModel.PercentScore:F0}%", "OK");
+            await Navigation.PopAsync();
             return;
         }
         SetNextQuestion();
@@ -51,7 +52,6 @@ public partial class QuestionsPage : ContentPage
         {
             AnsweredQuestion answeredQuestion = new (question, correct);
             await _studyDatabase.SaveAnsweredQuestion(answeredQuestion);
-            await Navigation.PopAsync();
         }
         _navViewModel.QuestionAnswered = true;
         _navViewModel.AddAnswer(correct);

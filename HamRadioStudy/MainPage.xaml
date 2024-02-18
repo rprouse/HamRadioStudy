@@ -45,6 +45,11 @@
       </Grid>
 
       <Button
+            Text="Practice Incorrectly Answered" 
+            Clicked="OnPracticeIncorrectClicked"
+            Style="{StaticResource Menu}" />
+
+      <Button
             Text="Practice Exam" 
             Clicked="OnPracticeExamClicked"
             Style="{StaticResource Menu}" />
