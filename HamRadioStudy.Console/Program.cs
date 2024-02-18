@@ -10,7 +10,7 @@ try
 
     int completed = 0;
     int correct = 0;
-    foreach (var question in service.AllQuestions)
+    foreach (var question in service.AllQuestions())
     {
         int answer = OutputQuestion(question);
 
