@@ -2,10 +2,50 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HamRadioStudy.Views.NavigationView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Navigation goes here"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+  <Grid Margin="30,0,30,0" HorizontalOptions="FillAndExpand">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Label VerticalOptions="Center"
+           HorizontalOptions="Start"
+           FontSize="18"
+           Grid.Row="0"
+           Grid.Column="0" >
+      <Label.Text>
+        <MultiBinding StringFormat="{}Score: {0}/{1} {2:F1}%">
+          <Binding Path="Correct" />
+          <Binding Path="Total" />
+          <Binding Path="OverallPercent" />
+        </MultiBinding>
+      </Label.Text>
+    </Label>
+    <Label VerticalOptions="Center"
+           HorizontalOptions="Start"
+           FontSize="18"
+           Grid.Row="1"
+           Grid.Column="0" >
+      <Label.Text>
+        <MultiBinding StringFormat="{}{0} of {1} questions complete">
+          <Binding Path="Total" />
+          <Binding Path="OverallTotal" />
+        </MultiBinding>
+      </Label.Text>
+    </Label>
+    <Button
+      x:Name="NextButton"
+      Grid.Row="0"
+      Grid.Column="1"
+      Grid.RowSpan="2"
+      Text="Next"
+      Padding="30,0,30,0"
+      Clicked="OnNextClicked"
+      HorizontalOptions="End"
+      VerticalOptions="Center"
+      />
+  </Grid>
 </ContentView>

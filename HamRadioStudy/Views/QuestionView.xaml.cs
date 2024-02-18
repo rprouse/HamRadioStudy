@@ -1,5 +1,6 @@
 using System.Windows.Input;
 using HamRadioStudy.Core.Entities;
+using HamRadioStudy.Extensions;
 
 namespace HamRadioStudy.Views;
 
@@ -81,6 +82,9 @@ public partial class QuestionView : ContentView
                 correctButton.BackgroundColor = _correctColor;
             }
         }
+
+        // Notify the parent QuestionsPage that an answer was given
+        this.GetParentOfType<QuestionsPage>()?.AnswerQuestion(question.CorrectAnswer == answer);
     }
 
     protected override void OnBindingContextChanged()

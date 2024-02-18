@@ -5,16 +5,12 @@
              xmlns:views="clr-namespace:HamRadioStudy.Views"
              x:Class="HamRadioStudy.QuestionsPage"
              Title="Study Questions">
-  <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+  <VerticalStackLayout Padding="30,0">
     <views:QuestionView
             x:Name="QuestionView"
-            VerticalOptions="StartAndExpand" 
             HorizontalOptions="FillAndExpand" />
     <views:NavigationView
             x:Name="NavigationView"
-            VerticalOptions="EndAndExpand"
             HorizontalOptions="FillAndExpand" />
   </VerticalStackLayout>
 </ContentPage>
