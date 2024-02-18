@@ -10,6 +10,10 @@ public class Question
 
     public int CorrectAnswer { get; }
 
+    public int Section { get; }
+
+    public int Category { get; }
+
     public Question(string id, string question, string answer, string[] incorrectAnswers)
     {
         if (incorrectAnswers.Length != 3)
@@ -20,6 +24,10 @@ public class Question
         Id = id;
         QuestionText = question;
         Answers = new string[4];
+
+        // Parse out the section and category from the id
+        Section = int.Parse(Id.Substring(2, 3));
+        Category = int.Parse(Id.Substring(6, 3));
 
         CorrectAnswer = rand.Next(4);
 

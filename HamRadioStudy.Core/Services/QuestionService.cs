@@ -36,6 +36,28 @@ public class QuestionService
     /// <summary>
     /// Returns all the questions in a random order
     /// </summary>
-    public IEnumerable<Question> AllQuestions =>
+    public IEnumerable<Question> AllQuestions() =>
         _questions.OrderBy(_ => _rand.Next());
+
+    /// <summary>
+    /// Returns a random selection of questions
+    /// </summary>
+    public IEnumerable<Question> GetQuestions(int count) =>
+        _questions.OrderBy(_ => _rand.Next()).Take(count);
+
+    public IEnumerable<Question> PracticeExam()
+    {
+        // Get 100 questions, one from each section/category
+        int numSections = _questions.Max(q => q.Section);
+        for (int nSec = 1; nSec <= numSections; nSec++)
+        {
+            var section = _questions.Where(q => q.Section == nSec);
+            int numCategories = section.Max(q => q.Category);
+            for (int nCat = 1; nCat <= numCategories; nCat++)
+            {
+                var category = section.Where(q => q.Category == nCat);
+                yield return category.ElementAt(_rand.Next(category.Count()));
+            }
+        }
+    }
 }

@@ -13,12 +13,12 @@
     </Grid.ColumnDefinitions>
     <Label VerticalOptions="Center"
            HorizontalOptions="Start"
-           FontSize="18"
+           FontSize="14"
            LineBreakMode="WordWrap"
            Grid.Row="0"
            Grid.Column="0" >
       <Label.Text>
-        <MultiBinding StringFormat="{}Score: {0:F0}% correct ({1} of {2})">
+        <MultiBinding StringFormat="{}{0:F0}% correct ({1} of {2})">
           <Binding Path="PercentScore" />
           <Binding Path="Correct" />
           <Binding Path="Total" />
@@ -27,12 +27,12 @@
     </Label>
     <Label VerticalOptions="Center"
            HorizontalOptions="Start"
-           FontSize="18"
+           FontSize="12"
            LineBreakMode="WordWrap"
            Grid.Row="1"
            Grid.Column="0" >
       <Label.Text>
-        <MultiBinding StringFormat="{}Complete: {0:F1}% answered ({1} of {2})">
+        <MultiBinding StringFormat="{}{0:F1}% answered ({1} of {2})">
           <Binding Path="OverallPercentComplete" />
           <Binding Path="Total" />
           <Binding Path="OverallTotal" />

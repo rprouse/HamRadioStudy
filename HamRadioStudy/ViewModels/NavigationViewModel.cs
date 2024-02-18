@@ -31,7 +31,7 @@ public class NavigationViewModel(int overallTotal) : INotifyPropertyChanged
     /// <summary>
     /// Your current score as a percentage
     /// </summary>
-    public double PercentScore => Correct / (double)Total * 100;
+    public double PercentScore => Total > 0 ? Correct / (double)Total * 100 : 0.0;
 
     /// <summary>
     /// Percent number of questions answered
