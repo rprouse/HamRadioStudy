@@ -1,4 +1,5 @@
 using HamRadioStudy.Core.Services;
+using HamRadioStudy.Models;
 
 namespace HamRadioStudy;
 
@@ -11,31 +12,22 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         _questionService = new QuestionService(_studyDatabase);
-        NumberOfQuestionsPicker.SelectedIndex = 0;
+
+        TestTypePicker.ItemsSource = new List<TestType>
+        {
+            new TestType("Practice Exam", _questionService.PracticeExam ),
+            new TestType("Practice Incorrect", _questionService.GetQuestionsAnsweredIncorrectly),
+            new TestType("Quick Test", () => _questionService.GetQuestions(20)),
+            new TestType("All Questions", _questionService.AllQuestions)
+        };
+        TestTypePicker.SelectedIndex = 0;
     }
 
-    private async void OnPracticeExamClicked(object sender, EventArgs e)
+    private async void OnTakeTestClicked(object sender, EventArgs e)
     {
-        var page = new QuestionsPage(_questionService.PracticeExam(), "Practice Exam");
-        await Navigation.PushAsync(page);
-    }
-
-    private async void OnPracticeIncorrectClicked(object sender, EventArgs e)
-    {
-        var page = new QuestionsPage(await _questionService.GetQuestionsAnsweredIncorrectly(), "Practice Exam");
-        await Navigation.PushAsync(page);
-    }
-
-    private async void OnQuickTestClicked(object sender, EventArgs e)
-    {
-        int numQuestions = (NumberOfQuestionsPicker.SelectedIndex + 1) * 10;
-        var page = new QuestionsPage(_questionService.GetQuestions(numQuestions), "Quick Test");
-        await Navigation.PushAsync(page);
-    }
-
-    private async void OnAllQuestionsClicked(object sender, EventArgs e)
-    {
-        var page = new QuestionsPage(_questionService.AllQuestions(), "All Questions");
+        var testType = TestTypePicker.SelectedItem as TestType;
+        if (testType is null) return;
+        var page = new QuestionsPage(await testType.GetQuestions(), testType.Title);
         await Navigation.PushAsync(page);
     }
 }

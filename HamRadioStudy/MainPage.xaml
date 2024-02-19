@@ -2,68 +2,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HamRadioStudy.MainPage"
-             Title="Ham Radio Study">
+             Title="Ham Radio Study" >
 
   <ScrollView>
-    <VerticalStackLayout
-            Padding="20,0"
-            Spacing="25">
-      <Image
-            Source="tower.png"
-            HeightRequest="185"
-            Aspect="AspectFit" />
+    <VerticalStackLayout Padding="20,0" Spacing="25">
+      <Image Source="tower.png" HeightRequest="185" Aspect="AspectFit" />
 
-      <Label
-            Text="Practice questions for the Canadian Amateur Radio Operator Certificate Basic"
-            LineBreakMode="WordWrap"
-            Style="{StaticResource SubHeadline}" />
+      <Label Text="Practice questions for the Canadian Amateur Radio Operator Certificate Basic"
+        LineBreakMode="WordWrap"
+        Style="{StaticResource SubHeadline}" />
 
       <Grid HorizontalOptions="FillAndExpand">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="*" />
           <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
-        <Button
-            Text="Quick Test" 
-            Clicked="OnQuickTestClicked"
-            Padding="65,0,0,0"
-            Style="{StaticResource Menu}" />
-        <Picker x:Name="NumberOfQuestionsPicker"
-                Grid.Column="1"
-                SelectedIndex="0"
-                Margin="10,0,0,0">
-          <Picker.ItemsSource>
-            <x:Array Type="{x:Type x:String}">
-              <x:String>10</x:String>
-              <x:String>20</x:String>
-              <x:String>30</x:String>
-              <x:String>40</x:String>
-              <x:String>50</x:String>
-            </x:Array>
-          </Picker.ItemsSource>
+        <Picker x:Name="TestTypePicker"
+          Grid.Column="0"
+          SelectedIndex="0"
+          Margin="0,0,10,0">
         </Picker>
+        <Button
+          Text="TX" 
+          Grid.Column="1"
+          Clicked="OnTakeTestClicked"
+          Padding="40,0"
+          Style="{StaticResource Menu}" />
       </Grid>
 
-      <Button
-            Text="Practice Incorrectly Answered" 
-            Clicked="OnPracticeIncorrectClicked"
-            Style="{StaticResource Menu}" />
-
-      <Button
-            Text="Practice Exam" 
-            Clicked="OnPracticeExamClicked"
-            Style="{StaticResource Menu}" />
-
-      <Button
-            Text="All Questions" 
-            Clicked="OnAllQuestionsClicked"
-            Style="{StaticResource Menu}" />
-
       <Label
-            Text="This app is not affiliated with Innovation, Science and Economic Development Canada (ISED) or any other government agency. The questions are based on the official question bank current as of February 2024."
-            LineBreakMode="WordWrap"
-            Style="{StaticResource Caption}"
-        />
+        Text="This app is not affiliated with Innovation, Science and Economic Development Canada (ISED) or any other government agency. The questions are based on the official question bank current as of February 2024."
+        LineBreakMode="WordWrap"
+        Style="{StaticResource Caption}" />
     </VerticalStackLayout>
   </ScrollView>
 
