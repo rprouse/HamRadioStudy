@@ -4,7 +4,7 @@
              xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
              x:Class="HamRadioStudy.Views.NavigationView"
              x:DataType="vm:NavigationViewModel">
-  <Grid Margin="30,0,30,0" HorizontalOptions="FillAndExpand">
+  <Grid Margin="{OnIdiom Phone='10', Tablet='15', Desktop='20', Default='15'}">
     <Grid.RowDefinitions>
       <RowDefinition Height="*" />
       <RowDefinition Height="*" />
