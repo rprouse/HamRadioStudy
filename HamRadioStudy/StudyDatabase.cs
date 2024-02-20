@@ -1,4 +1,3 @@
-using System.Linq;
 using System.Diagnostics.CodeAnalysis;
 using HamRadioStudy.Core.Interfaces;
 using HamRadioStudy.Core.Models;
@@ -6,6 +5,7 @@ using SQLite;
 
 namespace HamRadioStudy
 {
+    // See https://learn.microsoft.com/en-us/dotnet/maui/data-cloud/database-sqlite?view=net-maui-8.0
     internal class StudyDatabase : IStudyDatabase
     {
         SQLiteAsyncConnection? _db;
