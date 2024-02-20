@@ -1,15 +1,5 @@
-# HamRadioStudy
+# Ham Radio Study
 
-## Migrations
+Practice study question app for the Canadian Amateur Radio Operators Certificate Basic.
 
-Go to `Tools > NuGet Package Manager > Package Manager Console` and run the following command to create a new migration:
-
-```sh
-Add-Migration Questions -Context ApplicationDbContext -StartupProject HamRadioStudy
-```
-
-To apply the migration, run the following command:
-
-```sh
-Update-Database -Context ApplicationDbContext -StartupProject HamRadioStudy
-```
+This app is not affiliated with Innovation, Science and Economic Development Canada (ISED) or any other government agency. The questions are based on the official question bank current as of February 2024.
