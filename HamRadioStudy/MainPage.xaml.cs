@@ -15,9 +15,10 @@ public partial class MainPage : ContentPage
 
         TestTypePicker.ItemsSource = new List<TestType>
         {
-            new TestType("Practice Exam", _questionService.PracticeExam ),
-            new TestType("Practice Incorrect", _questionService.GetQuestionsAnsweredIncorrectly),
             new TestType("Quick Test", () => _questionService.GetQuestions(20)),
+            new TestType("Review Incorrect Answers", async () => await _questionService.GetQuestionsAnsweredIncorrectly(20)),
+            new TestType("Review Worst Category", async () => await _questionService.GetQuestionsFromWorstCategory(20)),
+            new TestType("Practice Exam", _questionService.PracticeExam ),
             new TestType("All Questions", _questionService.AllQuestions)
         };
         TestTypePicker.SelectedIndex = 0;

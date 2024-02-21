@@ -11,4 +11,6 @@ public interface IStudyDatabase
     Task<int> GetCorrectAnswers();
 
     Task<IList<AnsweredQuestion>> GetIncorrectlyAnsweredQuestions();
+
+    Task<int> GetWorstCategory();
 }

@@ -51,5 +51,12 @@ namespace HamRadioStudy
                 .ToListAsync();
             return incorrect.Distinct(new AnsweredQuestionComparer()).ToList();
         }
+
+        public async Task<int> GetWorstCategory()
+        {
+            await Init();
+
+            return await _db.ExecuteAsync("SELECT Category FROM AnsweredQuestion WHERE IsCorrect = 0 GROUP BY Category ORDER BY COUNT(*) DESC LIMIT 1");
+        }
     }
 }

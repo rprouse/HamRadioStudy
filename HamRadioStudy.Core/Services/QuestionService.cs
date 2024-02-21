@@ -64,9 +64,25 @@ public class QuestionService
         }
     }
 
-    public async Task<IEnumerable<Question>> GetQuestionsAnsweredIncorrectly()
+    public async Task<IEnumerable<Question>> GetQuestionsAnsweredIncorrectly(int count)
     {
         var incorrect = await _studyDatabase.GetIncorrectlyAnsweredQuestions();
-        return incorrect.Select(i => _questions.First(q => q.Id == i.QuestionId));
+        return incorrect
+            .Select(i => _questions.First(q => q.Id == i.QuestionId))
+            .OrderBy(_ => _rand.Next())
+            .Take(count);
+    }
+
+    public async Task<IEnumerable<Question>> GetQuestionsFromWorstCategory(int count)
+    {
+        var category = await _studyDatabase.GetWorstCategory();
+        if (category == 0)
+        {
+            return GetQuestions(count);
+        }
+        return _questions
+            .Where(q => q.Category == category)
+            .OrderBy(_ => _rand.Next())
+            .Take(count);
     }
 }
