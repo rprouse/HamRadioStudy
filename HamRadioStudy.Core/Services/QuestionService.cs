@@ -5,7 +5,7 @@ namespace HamRadioStudy.Core.Services;
 
 public class QuestionService
 {
-    static readonly Random _rand = new (Environment.TickCount);
+    private static readonly Random _rand = new (Environment.TickCount);
     private readonly List<Question> _questions;
     private readonly IStudyDatabase _studyDatabase;
 
@@ -15,11 +15,9 @@ public class QuestionService
 
         // Load basic_questions.txt into a list of questions from a resource file
         var assembly = typeof(Question).Assembly;
-        var resourceStream = assembly.GetManifestResourceStream("HamRadioStudy.Core.Resources.basic_questions.txt");
-        if (resourceStream is null)
-        {
-            throw new InvalidDataException("Resource not found");
-        }
+        var resourceStream = assembly
+            .GetManifestResourceStream("HamRadioStudy.Core.Resources.basic_questions.txt") 
+            ?? throw new InvalidDataException("Resource not found");
 
         using var reader = new StreamReader(resourceStream);
         _questions = reader.ReadToEnd()
@@ -35,6 +33,18 @@ public class QuestionService
             .ToList();
         _studyDatabase = studyDatabase;
     }
+
+    /// <summary>
+    /// The total number of questions
+    /// </summary>
+    public int QuestionCount => _questions.Count;
+
+    /// <summary>
+    /// Get the number of questions in a given category
+    /// </summary>
+    /// <param name="category"></param>
+    /// <returns></returns>
+    public int CategoryQuestionCount(int category) => _questions.Count(q => q.Category == category);
 
     /// <summary>
     /// Returns all the questions in a random order
@@ -77,9 +87,8 @@ public class QuestionService
     {
         var category = await _studyDatabase.GetWorstCategory();
         if (category == 0)
-        {
             return GetQuestions(count);
-        }
+        
         return _questions
             .Where(q => q.Category == category)
             .OrderBy(_ => _rand.Next())

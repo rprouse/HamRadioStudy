@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
+             x:Class="HamRadioStudy.StatsPage"
+             x:DataType="vm:StatsViewModel">
+  <ScrollView>
+    <VerticalStackLayout Padding="20" Spacing="8">
+      <Label Text="📈 Overall Statistics" Style="{StaticResource StatHeadline}"/>
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="Overall.AnsweredQuestions" />
+            <Binding Path="Overall.TotalQuestions" />
+            <Binding Path="Overall.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="📻 Category Statistics" Style="{StaticResource StatHeadline}"/>
+      <Label Text="B-001 Regulations and Governance" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B001.AnsweredQuestions" />
+            <Binding Path="B001.TotalQuestions" />
+            <Binding Path="B001.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-002 Operating Procedures" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B002.AnsweredQuestions" />
+            <Binding Path="B002.TotalQuestions" />
+            <Binding Path="B002.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-003 Station Setup and Operations" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B003.AnsweredQuestions" />
+            <Binding Path="B003.TotalQuestions" />
+            <Binding Path="B003.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-004 Amplifiers and Signals" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B004.AnsweredQuestions" />
+            <Binding Path="B004.TotalQuestions" />
+            <Binding Path="B004.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-005 Measurements and Calculations" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B005.AnsweredQuestions" />
+            <Binding Path="B005.TotalQuestions" />
+            <Binding Path="B005.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-006 Transmission Lines and Impedance" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B006.AnsweredQuestions" />
+            <Binding Path="B006.TotalQuestions" />
+            <Binding Path="B006.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-007 Propagation" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B007.AnsweredQuestions" />
+            <Binding Path="B007.TotalQuestions" />
+            <Binding Path="B007.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+
+      <Label Text="B-008 Interference and Filtering" Style="{StaticResource StatSubHeadline}" />
+      <Label Style="{StaticResource Statistic}">
+        <Label.Text>
+          <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
+            <Binding Path="B008.AnsweredQuestions" />
+            <Binding Path="B008.TotalQuestions" />
+            <Binding Path="B008.PercentCorrect" />
+          </MultiBinding>
+        </Label.Text>
+      </Label>
+    </VerticalStackLayout>
+  </ScrollView>
+</ContentPage>
