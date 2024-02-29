@@ -1,3 +1,4 @@
+using HamRadioStudy.Core.Interfaces;
 using HamRadioStudy.Core.Services;
 using HamRadioStudy.Models;
 using HamRadioStudy.ViewModels;
@@ -7,11 +8,13 @@ namespace HamRadioStudy;
 public partial class MainPage : ContentPage
 {
     private readonly QuestionService _questionService;
-    private readonly StudyDatabase _db = new ();
+    private readonly IStudyDatabase _db;
 
-    public MainPage()
+    public MainPage(IStudyDatabase db)
     {
         InitializeComponent();
+
+        _db = db;
         _questionService = new QuestionService(_db);
 
         TestTypePicker.ItemsSource = new List<TestType>
