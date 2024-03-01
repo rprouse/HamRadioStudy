@@ -107,7 +107,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <MauiXaml Update="QuestionsPage.xaml">
+    <MauiXaml Update="Views\QuestionsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
     <MauiXaml Update="Views\NavigationView.xaml">
