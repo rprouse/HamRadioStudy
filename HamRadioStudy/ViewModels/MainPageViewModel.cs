@@ -1,5 +1,4 @@
 using System.Windows.Input;
-using HamRadioStudy.Core.Services;
 using HamRadioStudy.Models;
 using HamRadioStudy.Services;
 

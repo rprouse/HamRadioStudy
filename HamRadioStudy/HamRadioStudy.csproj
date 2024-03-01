@@ -92,6 +92,13 @@
 
   <ItemGroup>
     <None Remove="Resources\AppIcon\appiconfg.svg" />
+    <None Remove="Resources\Data\basic_questions.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Data\basic_questions.txt">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -100,10 +107,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
     <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.8" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HamRadioStudy.Core\HamRadioStudy.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

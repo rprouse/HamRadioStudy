@@ -1,6 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
-using HamRadioStudy.Core.Interfaces;
-using HamRadioStudy.Core.Models;
+using HamRadioStudy.Models;
 using SQLite;
 
 namespace HamRadioStudy
@@ -8,10 +7,10 @@ namespace HamRadioStudy
     // See https://learn.microsoft.com/en-us/dotnet/maui/data-cloud/database-sqlite?view=net-maui-8.0
     internal class StudyDatabase : IStudyDatabase
     {
-        SQLiteAsyncConnection? _db;
+        private SQLiteAsyncConnection? _db;
 
         [MemberNotNull(nameof(_db))]
-        async Task Init()
+        private async Task Init()
         {
             if (_db is not null)
                 return;
@@ -23,10 +22,9 @@ namespace HamRadioStudy
         public async Task<int> SaveAnsweredQuestion(AnsweredQuestion answeredQuestion)
         {
             await Init();
-            if (answeredQuestion.Id != 0)
-                return await _db.UpdateAsync(answeredQuestion);
-            else
-                return await _db.InsertAsync(answeredQuestion);
+            return answeredQuestion.Id != 0 ? 
+                await _db.UpdateAsync(answeredQuestion) : 
+                await _db.InsertAsync(answeredQuestion);
         }
 
         public async Task<int> GetAnsweredQuestions()

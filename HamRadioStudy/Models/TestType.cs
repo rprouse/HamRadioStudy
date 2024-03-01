@@ -1,5 +1,3 @@
-using HamRadioStudy.Core.Entities;
-
 namespace HamRadioStudy.Models;
 
 public class TestType

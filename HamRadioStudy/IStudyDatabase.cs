@@ -1,6 +1,6 @@
-using HamRadioStudy.Core.Models;
+using HamRadioStudy.Models;
 
-namespace HamRadioStudy.Core.Interfaces;
+namespace HamRadioStudy;
 
 public interface IStudyDatabase
 {

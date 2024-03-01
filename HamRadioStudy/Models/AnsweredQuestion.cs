@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
-using HamRadioStudy.Core.Entities;
 
-namespace HamRadioStudy.Core.Models;
+namespace HamRadioStudy.Models;
 
 public class AnsweredQuestion
 {

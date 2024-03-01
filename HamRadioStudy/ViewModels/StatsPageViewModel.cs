@@ -1,5 +1,4 @@
-using HamRadioStudy.Core.Interfaces;
-using HamRadioStudy.Core.Services;
+using HamRadioStudy.Services;
 
 namespace HamRadioStudy.ViewModels;
 

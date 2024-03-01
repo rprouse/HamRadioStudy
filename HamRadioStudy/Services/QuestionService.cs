@@ -1,7 +1,6 @@
-using HamRadioStudy.Core.Entities;
-using HamRadioStudy.Core.Interfaces;
+using HamRadioStudy.Models;
 
-namespace HamRadioStudy.Core.Services;
+namespace HamRadioStudy.Services;
 
 public class QuestionService
 {
@@ -11,12 +10,12 @@ public class QuestionService
 
     public QuestionService(IStudyDatabase studyDatabase, bool english = true)
     {
-        int offset = english ? 0 : 5;
+        var offset = english ? 0 : 5;
 
         // Load basic_questions.txt into a list of questions from a resource file
         var assembly = typeof(Question).Assembly;
         var resourceStream = assembly
-            .GetManifestResourceStream("HamRadioStudy.Core.Resources.basic_questions.txt") 
+            .GetManifestResourceStream("HamRadioStudy.Resources.Data.basic_questions.txt") 
             ?? throw new InvalidDataException("Resource not found");
 
         using var reader = new StreamReader(resourceStream);
@@ -61,12 +60,12 @@ public class QuestionService
     public IEnumerable<Question> PracticeExam()
     {
         // Get 100 questions, one from each section/category
-        int numSections = _questions.Max(q => q.Section);
-        for (int nSec = 1; nSec <= numSections; nSec++)
+        var numSections = _questions.Max(q => q.Section);
+        for (var nSec = 1; nSec <= numSections; nSec++)
         {
             var section = _questions.Where(q => q.Section == nSec);
-            int numCategories = section.Max(q => q.Category);
-            for (int nCat = 1; nCat <= numCategories; nCat++)
+            var numCategories = section.Max(q => q.Category);
+            for (var nCat = 1; nCat <= numCategories; nCat++)
             {
                 var category = section.Where(q => q.Category == nCat);
                 yield return category.ElementAt(_rand.Next(category.Count()));

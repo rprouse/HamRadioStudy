@@ -1,5 +1,5 @@
-using HamRadioStudy.Core.Entities;
 using HamRadioStudy.Extensions;
+using HamRadioStudy.Models;
 
 namespace HamRadioStudy.Views;
 

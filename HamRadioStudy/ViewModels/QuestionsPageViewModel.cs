@@ -1,4 +1,4 @@
-using HamRadioStudy.Core.Entities;
+using HamRadioStudy.Models;
 
 namespace HamRadioStudy.ViewModels;
 

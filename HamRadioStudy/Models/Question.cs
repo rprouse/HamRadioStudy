@@ -1,6 +1,4 @@
-using System.Text;
-
-namespace HamRadioStudy.Core.Entities;
+namespace HamRadioStudy.Models;
 
 public class Question
 {
@@ -35,14 +33,7 @@ public class Question
         // The correct answer is placed at the index of CorrectAnswer
         for (int i = 0, j = 0; i < 4; i++)
         {
-            if (i == CorrectAnswer)
-            {
-                Answers[i] = answer;
-            }
-            else
-            {
-                Answers[i] = incorrectAnswers[j++];
-            }
+            Answers[i] = i == CorrectAnswer ? answer : incorrectAnswers[j++];
         }
     }
 

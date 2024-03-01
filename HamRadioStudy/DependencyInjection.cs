@@ -1,5 +1,3 @@
-using HamRadioStudy.Core.Interfaces;
-using HamRadioStudy.Core.Services;
 using HamRadioStudy.Services;
 using HamRadioStudy.ViewModels;
 
