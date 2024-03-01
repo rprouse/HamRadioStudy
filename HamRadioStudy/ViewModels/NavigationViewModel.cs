@@ -1,11 +1,7 @@
-using System.ComponentModel;
-
 namespace HamRadioStudy.ViewModels;
 
-public class NavigationViewModel(int overallTotal) : INotifyPropertyChanged
+public class NavigationViewModel(int overallTotal) : BaseViewModel
 {
-    public event PropertyChangedEventHandler? PropertyChanged;
-
     private bool _questionAnswered = false;
 
     /// <summary>
@@ -66,7 +62,4 @@ public class NavigationViewModel(int overallTotal) : INotifyPropertyChanged
         OnPropertyChanged(nameof(PercentScore));
         OnPropertyChanged(nameof(OverallPercentComplete));
     }
-
-    private void OnPropertyChanged(string propertyName) =>
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 }

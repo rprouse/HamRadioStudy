@@ -47,7 +47,7 @@ public partial class QuestionView : ContentView
 
         // Check which answer was clicked
         // by comparing the sender to the buttons
-        int answer = button switch
+        var answer = button switch
         {
             _ when button == AnswerA => 0,
             _ when button == AnswerB => 1,

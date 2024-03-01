@@ -2,7 +2,7 @@ using HamRadioStudy.Core.Entities;
 
 namespace HamRadioStudy.Models;
 
-internal class TestType
+public class TestType
 {
     public string Title { get; private set; }
 
@@ -27,12 +27,10 @@ internal class TestType
         if (GetQuestionsFunc is not null)
             return GetQuestionsFunc.Invoke();
 
-        if (GetQuestionsFuncAsync is not null)
-            return await GetQuestionsFuncAsync.Invoke();
-
-        throw new InvalidOperationException("No GetQuestions function set");
+        return GetQuestionsFuncAsync is not null
+            ? await GetQuestionsFuncAsync.Invoke()
+            : throw new InvalidOperationException("No GetQuestions function set");
     }
-
 
     public override string ToString() => Title;
 }
