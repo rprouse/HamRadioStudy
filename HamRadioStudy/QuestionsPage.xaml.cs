@@ -11,12 +11,12 @@ public partial class QuestionsPage : ContentPage
     private readonly StudyDatabase _studyDatabase = new StudyDatabase();
 
 
-    public QuestionsPage(IEnumerable<Question> questions, string title)
+    public QuestionsPage(QuestionsPageViewModel vm)
 	{
 		InitializeComponent();
-        Title = title;
+        Title = vm.Title;
 
-        _questions = new Queue<Question>(questions);
+        _questions = new Queue<Question>(vm.Questions);
         _navViewModel = new NavigationViewModel(_questions.Count);
 
         NavigationView.BindingContext = _navViewModel;

@@ -19,7 +19,7 @@ public class StatsViewModel(
     Statistic b005,
     Statistic b006,
     Statistic b007,
-    Statistic b008)
+    Statistic b008) : BaseViewModel
 {
     public Statistic Overall { get; } = overall;
     public Statistic B001 { get; } = b001;

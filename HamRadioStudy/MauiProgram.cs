@@ -17,6 +17,9 @@ public static class MauiProgram
 
         builder.Services.AddServices();
 
+        Routing.RegisterRoute("MainPage", typeof(MainPage));
+        Routing.RegisterRoute("QuestionsPage", typeof(QuestionsPage));
+
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif

@@ -2,7 +2,7 @@ using HamRadioStudy.Core.Entities;
 
 namespace HamRadioStudy.Models;
 
-internal class TestType
+public class TestType
 {
     public string Title { get; private set; }
 
