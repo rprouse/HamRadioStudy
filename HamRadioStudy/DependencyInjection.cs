@@ -11,6 +11,7 @@ public static class DependencyInjection
         services
             .AddTransient<QuestionService>()
             .AddTransient<MainPageViewModel>()
+            .AddTransient<StatsPageViewModel>()
             .AddTransient<INavigationService, NavigationService>()
             .AddSingleton<IStudyDatabase, StudyDatabase>()
             .AddSingleton<MainPage>();

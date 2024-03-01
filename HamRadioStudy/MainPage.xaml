@@ -7,7 +7,7 @@
              Title="">
 
   <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Statistics" Order="Secondary" Clicked="OnToolbarItemClicked" />
+    <ToolbarItem Text="Statistics" Order="Secondary" Command="{Binding StatisticsCommand}" />
   </ContentPage.ToolbarItems>
 
   <ScrollView>

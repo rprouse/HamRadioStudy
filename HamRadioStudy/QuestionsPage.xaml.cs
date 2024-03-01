@@ -8,7 +8,7 @@ public partial class QuestionsPage : ContentPage
 {
     private readonly Queue<Question> _questions;
     private readonly NavigationViewModel _navViewModel;
-    private readonly StudyDatabase _studyDatabase = new StudyDatabase();
+    private readonly StudyDatabase _studyDatabase = new();
 
 
     public QuestionsPage(QuestionsPageViewModel vm)
