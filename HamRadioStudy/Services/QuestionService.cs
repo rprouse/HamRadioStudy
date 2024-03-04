@@ -43,7 +43,8 @@ public class QuestionService
     /// </summary>
     /// <param name="category"></param>
     /// <returns></returns>
-    public int CategoryQuestionCount(int category) => _questions.Count(q => q.Category == category);
+    public int CategoryQuestionCount(int category) => 
+        _questions.Count(q => q.Category == category);
 
     /// <summary>
     /// Returns all the questions in a random order
@@ -88,9 +89,12 @@ public class QuestionService
         if (category == 0)
             return GetQuestions(count);
         
-        return _questions
+        return GetQuestionsFromCategory(category, count);
+    }
+
+    public IEnumerable<Question> GetQuestionsFromCategory(int category, int count) =>
+        _questions
             .Where(q => q.Category == category)
             .OrderBy(_ => _rand.Next())
             .Take(count);
-    }
 }

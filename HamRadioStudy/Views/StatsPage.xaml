@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
              x:Class="HamRadioStudy.StatsPage"
-             x:DataType="vm:StatsPageViewModel"
-             Title="">
+             x:DataType="vm:StatsPageViewModel">
   <ScrollView>
     <VerticalStackLayout Padding="0" Spacing="8">
       <Frame Style="{StaticResource StatHeadlineFrame}">
@@ -24,7 +23,7 @@
         <Label Text="📻 Category Statistics" Style="{StaticResource StatHeadline}"/>
       </Frame>
       
-      <Label Text="B-001 Regulations and Governance" Style="{StaticResource StatSubHeadline}" />
+      <Label Text="B-001 Regulations &amp; Governance" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
@@ -48,7 +47,7 @@
         </Label.Text>
       </Label>
 
-      <Label Text="B-003 Station Setup and Operations" Style="{StaticResource StatSubHeadline}" />
+      <Label Text="B-003 Station Setup &amp; Operations" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
@@ -60,7 +59,7 @@
         </Label.Text>
       </Label>
 
-      <Label Text="B-004 Amplifiers and Signals" Style="{StaticResource StatSubHeadline}" />
+      <Label Text="B-004 Amplifiers &amp; Signals" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
@@ -72,7 +71,7 @@
         </Label.Text>
       </Label>
 
-      <Label Text="B-005 Measurements and Calculations" Style="{StaticResource StatSubHeadline}" />
+      <Label Text="B-005 Measurements &amp; Calculations" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
@@ -84,7 +83,7 @@
         </Label.Text>
       </Label>
 
-      <Label Text="B-006 Transmission Lines and Impedance" Style="{StaticResource StatSubHeadline}" />
+      <Label Text="B-006 Transmission Lines &amp; Impedance" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
@@ -108,7 +107,7 @@
         </Label.Text>
       </Label>
 
-      <Label Text="B-008 Interference and Filtering" Style="{StaticResource StatSubHeadline}" />
+      <Label Text="B-008 Interference &amp; Filtering" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>

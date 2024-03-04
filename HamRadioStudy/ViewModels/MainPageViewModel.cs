@@ -20,8 +20,16 @@ public class MainPageViewModel : BaseViewModel
         TestTypes =
         [
             new ("Quick Test", () => _questionService.GetQuestions(20)),
-            new ("Review Incorrect Answers", async () => await _questionService.GetQuestionsAnsweredIncorrectly(20)),
-            new ("Review Worst Category", async () => await _questionService.GetQuestionsFromWorstCategory(20)),
+            new ("Review Mistakes", async () => await _questionService.GetQuestionsAnsweredIncorrectly(20)),
+            new ("Practice Weakest Category", async () => await _questionService.GetQuestionsFromWorstCategory(20)),
+            new ("B-001 Regulations & Governance", () => _questionService.GetQuestionsFromCategory(1, 20)),
+            new ("B-002 Operating Procedures", () => _questionService.GetQuestionsFromCategory(2, 20)),
+            new ("B-003 Station Setup & Operations", () => _questionService.GetQuestionsFromCategory(3, 20)),
+            new ("B-004 Amplifiers & Signals", () => _questionService.GetQuestionsFromCategory(4, 20)),
+            new ("B-005 Measurements & Calculations", () => _questionService.GetQuestionsFromCategory(5, 20)),
+            new ("B-006 Transmission Lines & Impedance", () => _questionService.GetQuestionsFromCategory(6, 20)),
+            new ("B-007 Propagation", () => _questionService.GetQuestionsFromCategory(7, 20)),
+            new ("B-008 Interference & Filtering", () => _questionService.GetQuestionsFromCategory(8, 20)),
             new ("Practice Exam", _questionService.PracticeExam ),
             new ("All Questions", _questionService.AllQuestions)
         ];
