@@ -20,7 +20,7 @@ public partial class QuestionView : ContentView
         _buttonColor = Application.Current?.RequestedTheme switch
         {
             AppTheme.Dark => Color.FromArgb("#9BD1E5"),
-            AppTheme.Light => Color.FromArgb("#484041"),
+            AppTheme.Light => Color.FromArgb("#434371"),
             _ => Color.FromArgb("#9BD1E5")
         };
 

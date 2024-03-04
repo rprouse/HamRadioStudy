@@ -6,8 +6,10 @@
 
   <!-- Note: For Android please see also Platforms\Android\Resources\values\colors.xml -->
 
-  <Color x:Key="Primary">#484041</Color>
+  <Color x:Key="Primary">#434371</Color>
+  <Color x:Key="PrimaryContrast">#595997</Color>
   <Color x:Key="PrimaryDark">#9BD1E5</Color>
+  <Color x:Key="PrimaryDarkContrast">#78a2b2</Color>
   <Color x:Key="PrimaryDarkText">#242424</Color>
   <Color x:Key="Secondary">#434371</Color>
   <Color x:Key="SecondaryDarkText">#484041</Color>

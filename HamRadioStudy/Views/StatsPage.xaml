@@ -3,10 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
              x:Class="HamRadioStudy.StatsPage"
-             x:DataType="vm:StatsViewModel">
+             x:DataType="vm:StatsPageViewModel"
+             Title="">
   <ScrollView>
-    <VerticalStackLayout Padding="20" Spacing="8">
-      <Label Text="📈 Overall Statistics" Style="{StaticResource StatHeadline}"/>
+    <VerticalStackLayout Padding="0" Spacing="8">
+      <Frame Style="{StaticResource StatHeadlineFrame}">
+        <Label Text="📈 Overall Statistics" Style="{StaticResource StatHeadline}"/>
+      </Frame>
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -17,8 +20,12 @@
         </Label.Text>
       </Label>
 
-      <Label Text="📻 Category Statistics" Style="{StaticResource StatHeadline}"/>
+      <Frame Style="{StaticResource StatHeadlineFrame}">
+        <Label Text="📻 Category Statistics" Style="{StaticResource StatHeadline}"/>
+      </Frame>
+      
       <Label Text="B-001 Regulations and Governance" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -30,6 +37,7 @@
       </Label>
 
       <Label Text="B-002 Operating Procedures" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -41,6 +49,7 @@
       </Label>
 
       <Label Text="B-003 Station Setup and Operations" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -52,6 +61,7 @@
       </Label>
 
       <Label Text="B-004 Amplifiers and Signals" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -63,6 +73,7 @@
       </Label>
 
       <Label Text="B-005 Measurements and Calculations" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -74,6 +85,7 @@
       </Label>
 
       <Label Text="B-006 Transmission Lines and Impedance" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -85,6 +97,7 @@
       </Label>
 
       <Label Text="B-007 Propagation" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
@@ -96,6 +109,7 @@
       </Label>
 
       <Label Text="B-008 Interference and Filtering" Style="{StaticResource StatSubHeadline}" />
+      <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
           <MultiBinding StringFormat="{}{0} of {1} questions answered, {2:F1}% correct">
