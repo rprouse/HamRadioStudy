@@ -77,10 +77,12 @@ public class QuestionService
     public async Task<IEnumerable<Question>> GetQuestionsAnsweredIncorrectly(int count)
     {
         var incorrect = await _studyDatabase.GetIncorrectlyAnsweredQuestions();
-        return incorrect
-            .Select(i => _questions.First(q => q.Id == i.QuestionId))
-            .OrderBy(_ => _rand.Next())
-            .Take(count);
+        return incorrect.Count == 0 ? 
+            GetQuestions(count) :
+            incorrect
+                .Select(i => _questions.First(q => q.Id == i.QuestionId))
+                .OrderBy(_ => _rand.Next())
+                .Take(count);
     }
 
     public async Task<IEnumerable<Question>> GetQuestionsFromWorstCategory(int count)
