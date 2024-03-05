@@ -91,7 +91,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Resources\AppIcon\appiconfg.svg" />
     <None Remove="Resources\Data\basic_questions.txt" />
   </ItemGroup>
 
