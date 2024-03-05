@@ -10,11 +10,11 @@ public interface IStudyDatabase
 
     Task<int> GetCorrectAnswers();
 
-    Task<int> GetCategoryAnsweredQuestions(int category);
+    Task<int> GetSectionAnsweredQuestions(int section);
 
-    Task<int> GetCategoryCorrectAnswers(int category);
+    Task<int> GetSectionCorrectAnswers(int section);
 
     Task<IList<AnsweredQuestion>> GetIncorrectlyAnsweredQuestions();
 
-    Task<int> GetWorstCategory();
+    Task<int> GetWorstSection();
 }

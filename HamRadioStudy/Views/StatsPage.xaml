@@ -20,7 +20,7 @@
       </Label>
 
       <Frame Style="{StaticResource StatHeadlineFrame}">
-        <Label Text="📻 Category Statistics" Style="{StaticResource StatHeadline}"/>
+        <Label Text="📻 Section Statistics" Style="{StaticResource StatHeadline}"/>
       </Frame>
       
       <Label Text="B-001 Regulations &amp; Governance" Style="{StaticResource StatSubHeadline}" />

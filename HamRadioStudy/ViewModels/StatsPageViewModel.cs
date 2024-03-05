@@ -28,14 +28,14 @@ public class StatsPageViewModel(IStudyDatabase db, QuestionService questionServi
     public async Task InitializeAsync()
     {
         Overall = new Statistic(await _db.GetCorrectAnswers(), await _db.GetAnsweredQuestions(), _questionService.QuestionCount);
-        B001 = new Statistic(await _db.GetCategoryCorrectAnswers(1), await _db.GetCategoryAnsweredQuestions(1), _questionService.CategoryQuestionCount(1));
-        B002 = new Statistic(await _db.GetCategoryCorrectAnswers(2), await _db.GetCategoryAnsweredQuestions(2), _questionService.CategoryQuestionCount(2));
-        B003 = new Statistic(await _db.GetCategoryCorrectAnswers(3), await _db.GetCategoryAnsweredQuestions(3), _questionService.CategoryQuestionCount(3));
-        B004 = new Statistic(await _db.GetCategoryCorrectAnswers(4), await _db.GetCategoryAnsweredQuestions(4), _questionService.CategoryQuestionCount(4));
-        B005 = new Statistic(await _db.GetCategoryCorrectAnswers(5), await _db.GetCategoryAnsweredQuestions(5), _questionService.CategoryQuestionCount(5));
-        B006 = new Statistic(await _db.GetCategoryCorrectAnswers(6), await _db.GetCategoryAnsweredQuestions(6), _questionService.CategoryQuestionCount(6));
-        B007 = new Statistic(await _db.GetCategoryCorrectAnswers(7), await _db.GetCategoryAnsweredQuestions(7), _questionService.CategoryQuestionCount(7));
-        B008 = new Statistic(await _db.GetCategoryCorrectAnswers(8), await _db.GetCategoryAnsweredQuestions(8), _questionService.CategoryQuestionCount(8));
+        B001 = new Statistic(await _db.GetSectionCorrectAnswers(1), await _db.GetSectionAnsweredQuestions(1), _questionService.CategoryQuestionCount(1));
+        B002 = new Statistic(await _db.GetSectionCorrectAnswers(2), await _db.GetSectionAnsweredQuestions(2), _questionService.CategoryQuestionCount(2));
+        B003 = new Statistic(await _db.GetSectionCorrectAnswers(3), await _db.GetSectionAnsweredQuestions(3), _questionService.CategoryQuestionCount(3));
+        B004 = new Statistic(await _db.GetSectionCorrectAnswers(4), await _db.GetSectionAnsweredQuestions(4), _questionService.CategoryQuestionCount(4));
+        B005 = new Statistic(await _db.GetSectionCorrectAnswers(5), await _db.GetSectionAnsweredQuestions(5), _questionService.CategoryQuestionCount(5));
+        B006 = new Statistic(await _db.GetSectionCorrectAnswers(6), await _db.GetSectionAnsweredQuestions(6), _questionService.CategoryQuestionCount(6));
+        B007 = new Statistic(await _db.GetSectionCorrectAnswers(7), await _db.GetSectionAnsweredQuestions(7), _questionService.CategoryQuestionCount(7));
+        B008 = new Statistic(await _db.GetSectionCorrectAnswers(8), await _db.GetSectionAnsweredQuestions(8), _questionService.CategoryQuestionCount(8));
     }
 
     public Statistic Overall { get; private set; } = new();

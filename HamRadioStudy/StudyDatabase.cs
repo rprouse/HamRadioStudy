@@ -39,22 +39,22 @@ namespace HamRadioStudy
             return await _db.Table<AnsweredQuestion>().Where(a => a.IsCorrect).CountAsync();
         }
 
-        public async Task<int> GetCategoryAnsweredQuestions(int category)
+        public async Task<int> GetSectionAnsweredQuestions(int section)
         {
             await Init();
             var result = await _db
                 .Table<AnsweredQuestion>()
-                .Where(a => a.Category == category)
+                .Where(a => a.Section == section)
                 .ToListAsync();
             return result.GroupBy(a => a.QuestionId).Count();
         }
 
-        public async Task<int> GetCategoryCorrectAnswers(int category)
+        public async Task<int> GetSectionCorrectAnswers(int section)
         {
             await Init();
             var result = await _db
                 .Table<AnsweredQuestion>()
-                .Where(a => a.Category == category && a.IsCorrect)
+                .Where(a => a.Section == section && a.IsCorrect)
                 .ToListAsync();
             return result.GroupBy(a => a.QuestionId).Count();
         }
@@ -70,13 +70,13 @@ namespace HamRadioStudy
             return incorrect.Distinct(new AnsweredQuestionComparer()).ToList();
         }
 
-        public async Task<int> GetWorstCategory()
+        public async Task<int> GetWorstSection()
         {
             await Init();
 
-            var result = await _db.QueryAsync<int>("SELECT Category FROM AnsweredQuestion WHERE IsCorrect = 0 GROUP BY Category ORDER BY COUNT(*) DESC");
-            var category = result.FirstOrDefault();
-            return category > 0 ? category : 1;
+            var result = await _db.QueryAsync<int>("SELECT Section FROM AnsweredQuestion WHERE IsCorrect = 0 GROUP BY Section ORDER BY COUNT(*) DESC");
+            var section = result.FirstOrDefault();
+            return section > 0 ? section : 1;
         }
     }
 }

@@ -8,8 +8,16 @@ public class Question
 
     public int CorrectAnswer { get; }
 
+    /// <summary>
+    /// The section of the question.  This is the first 3 digits of the question id.
+    /// There are 8 sections. If the Question is B-001-002, the section is 001.
+    /// </summary>
     public int Section { get; }
 
+    /// <summary>
+    /// The category of the question.  This is the second 3 digits of the question id.
+    /// There are a different number of categories for each section. If the Question is B-001-002, the category is 002.
+    /// </summary>
     public int Category { get; }
 
     public Question(string id, string question, string answer, string[] incorrectAnswers)

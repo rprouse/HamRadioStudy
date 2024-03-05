@@ -85,18 +85,17 @@ public class QuestionService
                 .Take(count);
     }
 
-    public async Task<IEnumerable<Question>> GetQuestionsFromWorstCategory(int count)
+    public async Task<IEnumerable<Question>> GetQuestionsFromWorstSection(int count)
     {
-        var category = await _studyDatabase.GetWorstCategory();
-        if (category == 0)
-            return GetQuestions(count);
-        
-        return GetQuestionsFromCategory(category, count);
+        var section = await _studyDatabase.GetWorstSection();
+        return section == 0 ?
+            GetQuestions(count) :
+            GetQuestionsFromSection(section, count);
     }
 
-    public IEnumerable<Question> GetQuestionsFromCategory(int category, int count) =>
+    public IEnumerable<Question> GetQuestionsFromSection(int section, int count) =>
         _questions
-            .Where(q => q.Category == category)
+            .Where(q => q.Section == section)
             .OrderBy(_ => _rand.Next())
             .Take(count);
 }
