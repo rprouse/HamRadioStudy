@@ -11,7 +11,7 @@
   <mp:PhoneIdentity PhoneProductId="B06E3A16-BF67-4463-BC38-17C9AFFAC404" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Ham Radio Study</DisplayName>
+    <DisplayName>Ham Study</DisplayName>
     <PublisherDisplayName>Alteridem Consulting</PublisherDisplayName>
     <Logo>$placeholder$.png</Logo>
   </Properties>
@@ -28,7 +28,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="Ham Radio Study"
+        DisplayName="Ham Study"
         Description="Practice questions for the Canadian Basic Amateur Radio Operators Certificate"
         Square150x150Logo="$placeholder$.png"
         Square44x44Logo="$placeholder$.png"

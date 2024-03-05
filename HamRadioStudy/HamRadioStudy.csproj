@@ -21,7 +21,7 @@
     <Nullable>enable</Nullable>
 
     <!-- Display name -->
-    <ApplicationTitle>Ham Radio Study</ApplicationTitle>
+    <ApplicationTitle>Ham Study</ApplicationTitle>
 
     <!-- App Identifier -->
     <ApplicationId>net.alteridem.hamradiostudy</ApplicationId>
@@ -37,7 +37,7 @@
     <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
     <DefaultLanguage>en-ca</DefaultLanguage>
-    <Title>Ham Radio Study</Title>
+    <Title>Ham Study</Title>
     <Company>Alteridem Consulting</Company>
   </PropertyGroup>
 
