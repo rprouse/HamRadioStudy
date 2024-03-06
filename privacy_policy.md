@@ -26,6 +26,6 @@ We reserve the right to make changes to this privacy policy at any time. Any cha
 
 ## Contact Us
 
-If you have any questions or concerns about this privacy policy or Ham Radio Study, please file an issue in this repository.
+If you have any questions or concerns about this privacy policy or Ham Radio Study, please file an issue in this [GitHub repository](https://github.com/rprouse/HamRadioStudy/issues). This application is open source. Comments and suggestions are welcome.
 
 This privacy policy reflects our commitment to not collecting, using, or sharing any personal information through Ham Radio Study. We believe in offering a secure and private application experience for all users.
