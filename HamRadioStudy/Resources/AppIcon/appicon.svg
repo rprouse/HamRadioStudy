@@ -4,49 +4,37 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   viewBox="0 0 64 64"
-   style="enable-background:new 0 0 64 64;"
+   viewBox="0 0 512 512"
    xml:space="preserve"
    sodipodi:docname="appicon.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   width="512"
+   height="512"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs13" /><sodipodi:namedview
-   id="namedview13"
-   pagecolor="#505050"
-   bordercolor="#eeeeee"
-   borderopacity="1"
-   inkscape:showpageshadow="0"
-   inkscape:pageopacity="0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#505050"
-   inkscape:zoom="9.1640625"
-   inkscape:cx="16.750213"
-   inkscape:cy="34.046036"
-   inkscape:window-width="1350"
-   inkscape:window-height="1000"
-   inkscape:window-x="283"
-   inkscape:window-y="145"
-   inkscape:window-maximized="0"
-   inkscape:current-layer="Layer_1" />
-<style
-   type="text/css"
-   id="style1">
-	.st0{fill:#77B3D4;}
-	.st1{opacity:0.2;}
-	.st2{fill:#231F20;}
-	.st3{fill:#4F5D73;}
-	.st4{fill:none;stroke:#4F5D73;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
-	.st5{fill:none;stroke:#4F5D73;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#4F5D73;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<circle
-   class="st0"
-   cx="32"
-   cy="32"
-   r="32"
-   id="circle1"
-   style="fill:#434371;fill-opacity:1" />
-</svg>
+     id="defs13" /><sodipodi:namedview
+     id="namedview13"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.5878906"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="131"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><rect
+     style="fill:#434371;fill-opacity:1;stroke-width:1	"
+     id="rect1"
+     width="512"
+     height="512"
+     x="0"
+     y="0" /></svg>
