@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net8.0-ios;net8.0-maccatalyst;net8.0-android34.0</TargetFrameworks>
@@ -92,12 +92,14 @@
 
   <ItemGroup>
     <None Remove="Resources\Data\basic_questions.txt" />
+    <None Remove="Resources\Data\hints_en.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\Data\basic_questions.txt">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Data\hints_en.txt" />
   </ItemGroup>
 
   <ItemGroup>
