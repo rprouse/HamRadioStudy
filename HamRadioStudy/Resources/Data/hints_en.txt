@@ -1,0 +1,971 @@
+B-001-001-001;The *A*uthority is provided by the *A*ct
+B-001-001-002;The *Authority* is provided by the *Act*
+B-001-001-003;There are lots of ICs in radios. *I*nnovation ... *C*anada
+B-001-001-004;It's a definition, not an act
+B-001-002-001;The government cares where you are and wants to find you quickly if you're doing something wrong.
+B-001-002-002;Those old guys at the radio club have had that same license for decades.
+B-001-002-003;If you do something wrong, the government wants to find you. Now.
+B-001-002-004;The government wants to find you, so they have your address. And when they find you, you should have proof you're allowed to operate.
+B-001-002-005;They might give you a couple of days to find it.
+B-001-002-006;Air is free!
+B-001-002-007;The government wants to find you, so they have your address. And when they find you, you should have proof you're allowed to operate.
+B-001-003-001;The rules are very strict for the bands allocated to amateur radio
+B-001-003-002;MAYDAY is only used to advise of emergencies.
+B-001-003-003;Let the judge decide.
+B-001-003-004;The Act allows government to take *act*ions.
+B-001-003-005;Government does what they want when they want.
+B-001-003-006;Same deal as the cops. Read question carefully: which is *not* correct.
+B-001-004-001;Some smart-alec kid beat you on this test.
+B-001-004-002;Simple question. Simple answer.
+B-001-004-003;You can't do it if you're restricted.
+B-001-004-004;You can have any combination once you've passed Basic
+B-001-004-005;You use one hand for morse. How many fingers does it have?
+B-001-004-006;Amateurs can only use amateur equipment and frequencies.
+B-001-004-007;We're pretty liberal in Canada.
+B-001-005-001;Only amateurs allowed to operate the gear.
+B-001-005-002;Did you learn to build a receiver as part of your studying for this test?
+B-001-005-003;Only amateurs can use amateur radios
+B-001-005-004;Only amatuers can use amatour radios
+B-001-006-001;Even two watts is enough to qualify for amateur radio apparatus
+B-001-006-002;amateurs can only talk to other amateurs
+B-001-006-003;Part of rules for unlicensed stuff is power limits.
+B-001-006-004;Everything is public. Little kids can get licensed. Keep it clean.
+B-001-006-005;Amateurs only on amateur frequencies.
+B-001-006-006;Any radio has to follow the rules. Particularly when transmitting on certain frequencies.
+B-001-007-001;Only amateur stuff. No business.
+B-001-007-002;Oly amateur to amateur
+B-001-007-003;Everything public and above-board
+B-001-007-004;Only amateur-to-amateur communication allowed
+B-001-007-005;Because everything must be public
+B-001-007-006;Because everything must somehow be public
+B-001-007-007;Because everything must somehow be public
+B-001-007-008;TURN DOWN FOR WHAT!!!
+B-001-007-009;For amateur, everything is public
+B-001-007-010;Amateur is for amateur stuff, so three of the answers don't make sense.
+B-001-007-011;Amateur. For amateur purposes only.
+B-001-008-001;If your radio is portable, you can pretty much bring it anywhere
+B-001-008-002;Think hard... one-way...
+B-001-008-003;If it's in your car or portable, can't you go anywhere?
+B-001-008-004;Advanced can do stuff for others - like clubs.
+B-001-008-005;Advanced can do stuff for others - like clubs
+B-001-008-006;Advaced can make their own stuff.
+B-001-009-001;If you're both qualified, you're both responsible people
+B-001-009-002;If you're both qualified, you're both responsible people
+B-001-009-003;If it's your gear, it's your fault.
+B-001-009-004;Amateur frequencies are for qualified amateurs.
+B-001-009-005;Don't let it get out of control.
+B-001-009-006;Don't get out of control.
+B-001-009-007;Amateur frequencies are for qualified amateurs.
+B-001-009-008;Training is allowed and encouraged.
+B-001-009-009;Training is allowed and encouraged.
+B-001-010-001;HArM radio
+B-001-010-002;Radio interference is always bad.
+B-001-010-003;Primary = priority, not exclusive.
+B-001-010-004;We're all equal.
+B-001-010-005;HArM radio.
+B-001-010-006;Be nice or you're in trouble
+B-001-010-007;*Four* thirty to *Four* fifty are reserved *for* emergency communications
+B-001-010-008;Think of phones and RC gear anyone is allowed to buy and use.
+B-001-010-009;Always be nice when operating your radio
+B-001-010-010;Think of RC stuff and cordless phones that anyone can use.  Round the numbers.
+B-001-010-011;Science is wayyyyy up there.
+B-001-011-001;Amateurs can only use amateur frequencies
+B-001-011-002;Amatuers can only use amateur frequencies. Except emergency. This is after the emergency.
+B-001-011-003;This is an emergency happening now.
+B-001-011-004;Only amateurs talking. Unless there's an emergency right now.
+B-001-011-005;There's an emergency right now.
+B-001-011-006;Disaster is recovery, where there's usually an emergency plan
+B-001-011-007;Distress. That means emergency right now.
+B-001-011-008;Disaster is rcovery from emergency, with advance planning.
+B-001-011-009;Disaster planning is a big part of ham radio
+B-001-011-010;Emergencies take precedence.
+B-001-012-001;It's AMATEUR Radio,  That's greek for "for the love of it".
+B-001-012-002;Anything transmitted on amateur radio is public.
+B-001-012-003;Its *amateur* radio.
+B-001-012-004;For emergencies. Helping law enforcement is part of that.
+B-001-013-001;It follows the format of the call signs in all the training material
+B-001-013-002;Good essay has a beginning, a middle and an end.
+B-001-013-003;Which of the terms keeps coming up in the questions?
+B-001-013-004;You don't know who you're going to be talking to... but you always identify yourself.
+B-001-013-005;Let people know you're leaving... and no longer listening.
+B-001-013-006;Just like TV shows.
+B-001-013-007;Which  one  is not usually on amateur frequencies?
+B-001-013-008;It's official part of the communication, so you use official...
+B-001-013-009;Good conversation has beginning, middle and end.
+B-001-013-010;Good conversation has beginning, middle and end.
+B-001-013-011;What looks like the examples in all the test material?
+B-001-014-001;If two countries, rules of both countries apply
+B-001-014-002;Ham radio operators let Scouts on their radios all the time - with supervision, of course.
+B-001-014-003;Two countries means both sets of rules must be respected.
+B-001-014-004;Two coutries means both countries' rules must be respected
+B-001-014-005;Two countries means both countrie's rules must be respected.
+B-001-014-006;You should be able to guess this one.
+B-001-014-007;Emergencies always take priority... within the laws of the countries.
+B-001-014-008;There's one weird one in here.
+B-001-014-009;There's one weird one in here.
+B-001-014-010;Canada and US are nice to each other.
+B-001-014-011;ITUmakes rules, but countries can have their own rules.
+B-001-015-001;Your station. Your rules.
+B-001-015-002;You can never go beyond your own qualifications.
+B-001-015-003;This is why you want to get 80% on your test.
+B-001-015-004;I'm THIRsTY for my amateur certification.
+B-001-015-005;300 or 286 divided by... (whichever is inside the range)
+B-001-015-006;300 or 286 divided by... (whichever is inside the range)
+B-001-015-007;300 or 286 divided by... (whichever is inside the range)
+B-001-015-008;300 or 286 divided by... (whichever is inside the range)
+B-001-015-009;300 or 286 divided by... (whichever is inside the range- or with range slightly above)
+B-001-015-010;300 or 286 divided by... (whichever is inside the range)
+B-001-015-011;Must apply to all amateurs, regardless of license level.
+B-001-016-001;30 KHz is generally a good answer above 30 MHz
+B-001-016-002;Twenty in the twenties
+B-001-016-003;Below 30 MHz is precious and reserved for Basic With Honours and Advanced
+B-001-016-004;Thirty above thirty
+B-001-016-005;30 above 30
+B-001-016-006;There's one exception that matters below 30 MHz. 10-to-1 odds you won't remember
+B-001-016-007;10-to-1 odds you won't remember which band is limited to 1 KHz
+B-001-016-008;It's a reasonable answer.
+B-001-016-009;Fastscan TV uses a LOT of bandwidth. It's only allowed on really hih frequencies.
+B-001-016-010;Fastscan TV uses a LOT of bandwidth. It's only allowed on really hih frequencies.
+B-001-016-011;10-to-1 you won't remember that there's a 1 KHz limit at 10.1 to 10.15 MHz
+B-001-017-001;Manners!
+B-001-017-002;147 MHZ is in UHF/VHF range, so it's local. Less power
+B-001-017-003;It's always the transmitter output.
+B-001-017-004;Memorize. For Basic, 560 PEP is absolute max, so answer will never be higher.
+B-001-017-005;*transmitting* or *output* power, which is going to be a wave
+B-001-017-006;Maximum *DC* *transmitter* (not transmit) power
+B-001-017-007;Maximum *DC* *transmitter* (not transmit) power
+B-001-017-008;*OUTPUT* across an *impedance matched load* (which means antenna cable and antenna)  is *transmitting* or *output* power, which is going to be a wave.
+B-001-017-009;Basic, not basic with honours, and it's *transmitter* and *input*
+B-001-017-010;Try to memorize
+B-001-018-001;Blindingly obvious.
+B-001-018-002;Manners rules applies. All radio is modulated, so this has got to be some kind of weird exception.
+B-001-018-003;29.5 is the magic number for repeater/phone questions.
+B-001-018-004;29.5 is a
+B-001-019-001;Above 150 MHz, you get into experimental stuff
+B-001-019-002;We really want the overmodulation protection because we're using some heavily shared frequencies
+B-001-019-003;Radiotelephony frequencies and heavily used and shared. We don't want to be overloading anything.
+B-001-019-004;The bandwidth is allocated. Use it to maximum advantage.
+B-001-019-005;You are restricted to certain bands. You need to know what you're doing.
+B-001-019-006;The bandwidth is allocated. Use it to get the best possible signal.
+B-001-020-001;Only unsecure, public stuff can be sent over amateur frequencies.
+B-001-020-002;Only public, non-commercial traffic.
+B-001-020-003;Obvious by now.
+B-001-020-004;ITU is primarily concerned with cross-border issues.
+B-001-020-005;Canada is in one of the regions of this organisation.
+B-001-021-001;For international standards, Europe is always first, then North America.
+B-001-021-002;When you're in another country, it's always a good idea to follow their rules.
+B-001-021-003;Follow rules for country - which don't stop at the beach. Think Coast Guard.
+B-001-021-004;In internationa standards, Europe is always first, and Americas second. That leaves...
+B-001-021-005;For international standards, Europe is always first, then North America.
+B-001-022-001;There's a fee for most things at a government office. And it's never just $5.
+B-001-022-002;What if the person is physically incapable of writing?
+B-001-022-003;Think about it. Examiner may have to really go out of his way to meet you for test.
+B-001-022-004;There's a fee for most things at a government office. And it's never just $5.
+B-001-022-005;We can accomodate... in both official languages
+B-001-023-001;It's that manners thing
+B-001-023-002;Communication regulations are federal
+B-001-023-003;Industry Canada rules apply.
+B-001-023-004;It's federal regulation
+B-001-023-005;You need to be polite. You don't have to be part of an arbitrary process
+B-001-023-006;You must be resonable within the FEDERAL rules
+B-001-023-007;NOT required when you have EXCLUSIONS
+B-001-023-008;THE FEDS MAKE THE RULES
+B-001-023-009;Federal rules apply.
+B-001-023-010;If they put in the process, they make the rules
+B-001-024-001;Limits of RF to the human body. Sounds like a health question.
+B-001-024-002;Safety Code 6 is published by Health Canada. Health is usually concerned with one thing in particular.
+B-001-024-003;Oddly enough, it covers the main frequency range allowed to ham radio basic licensees - even without honours.
+B-001-024-004;Safety Code 6 is from Health Canada. Why would the exposure limit be set lowest there?
+B-001-024-005;Safety Code 6 is concerned with exposure to radiation.
+B-001-024-006;Tricky question. Issue is - does the permitted exposure level decrease - or stay the same?
+B-001-024-007;Safety Code 6 specifies that the most risk is 30 to 300 MHz.
+B-001-024-008;All transmitters are covered.
+B-001-024-009;Health Canada's Safety Code 6 is primarily concerned with one limit.
+B-001-024-010;Health Canada's Safety Code 6 is primarily concerned with one limit.
+B-001-025-001;Receiving equipment is supposed to have at least a minimum level of immunity.
+B-001-025-002;1. We have a problem. 2. It's at the neighbours. 3. It's not a radio.
+B-001-025-003;The definition is pretty comprehensive. One answer is very comprehensive.
+B-001-025-004;EMCAB-2 covers immunity of things that can be affected by radio transmissions. One of these is not affected by *transmissions* from other devices.
+B-002-001-001;Always start with your call sign - and if you're trying to contact someone specific, their call sign.
+B-002-001-002;A repeater repeats radio signals. Especially weak ones.
+B-002-001-003;If we're co-ordinating things, where' trying to not stomp over each others' feet.
+B-002-001-004;If you don't shut up and let someone else talk, you're getting a time-out.
+B-002-001-005;It's in inaudible tone that goes out with your transmission. Repeater looks for it to activate.
+B-002-001-006;Big hint here: Only one of the answers has you using your won call sign.
+B-002-001-007;After safety, good manners is the second most important thing in ham radio.
+B-002-001-008;Safety is first in ham radio.
+B-002-001-009;No safety issue here, so manners applies. And always use your call sign.
+B-002-001-010;On a repeater, we avoid using code words. Plain language. But use your call sign!
+B-002-001-011;SiX to Separate signal Xross.
+B-002-002-001;The standard alphabet phonetics are your friend.
+B-002-002-002;Let's see. How can I make my call sign clearer?
+B-002-002-003;You just have to learn and practice this one.
+B-002-002-004;You just have to practic and learn these.
+B-002-002-005;You just have to practic and learn these.
+B-002-002-006;You just have to practic and learn these.
+B-002-002-007;You just have to practic and learn these.
+B-002-002-008;You just have to practice and learn these.
+B-002-002-009;You just have to practic and learn these.
+B-002-002-010;You just have to practic and learn these.
+B-002-002-011;You just have to practic and learn these.
+B-002-003-001;Once is not enough, but dont nag. But call sign only once.
+B-002-003-002;Communication is established, so you don't need to repeat.
+B-002-003-003;It's simple. One at a time. A simple frequency.
+B-002-003-004;Bcause of multiple simultaneous users, only repeaters use dual frequencies.
+B-002-003-005;It's LOCAL communication. Lower frequencies are better for long distance.
+B-002-003-006;Repeaters love VHF and UHF.
+B-002-003-007;If you can hear the other person without the repeater, why use the repeater?
+B-002-003-008;Repeater is shared. Remember: manners important.
+B-002-003-009;There's a NET (TEN MHz) between upper and lower
+B-002-003-010;Remember the NET (TEN MHz) between upper and lower
+B-002-003-011;What can you hear?
+B-002-004-001;Manners mean not interrupting.
+B-002-004-002;Manners. Which one will reduce the number of people you may be annoying?
+B-002-004-003;Manners: test before going to air
+B-002-004-004;Manners. Test all you can first without antenna.
+B-002-004-005;Manners. Always test first.
+B-002-004-006;First safety, then manners. You can be polite.
+B-002-004-007;Manners. Be nice.
+B-002-004-008;Manners. Which one makes you nicer?
+B-002-004-009;150 to 500 is too low - doesn't cover bandwidth of you voice. Other than that, use minimal.
+B-002-004-010;Plan your usage based on what/how you want to transmit
+B-002-004-011;Manners!
+B-002-005-001;You can nag a bit ore iun more. But never more than three times.
+B-002-005-002;You can repeat, but don't nag.
+B-002-005-003;Manners. Think of the other meatsack.
+B-002-005-004;Seek you.. and you don't know who it is.
+B-002-005-005;In french, DE is "from"
+B-002-005-006;don't Know who will reply
+B-002-005-007;Xcrossin long Distances
+B-002-005-008;3 looks like a B
+B-002-005-009;You really are breaking in.
+B-002-005-010;Morse is really, really low bandwidth.
+B-002-005-011;Manners
+B-002-006-001;Receive signal tone.
+B-002-006-002;Receive signal tone
+B-002-006-003;RST covers Readability, Strength and, for morse, Tone.
+B-002-006-004;RST covers readability, strength and, for more, Tone
+B-002-006-005;RST covers Readability, Strength and, for morse, Tone
+B-002-006-006;Repeater is key here. Are you receiving from other operator or from repeater?
+B-002-006-007;It has to increase, and it's ot a 1-1 match.
+B-002-006-008;It's a logarithmic scale, so it's going to be a square of someting.
+B-002-006-009;All values are high (R 1-5, others 1-10)
+B-002-006-010;All signals reasonable high (R 1-5, S and T 1-10)
+B-002-006-011;All values low
+B-002-007-001;*R*espond *S*lowly
+B-002-007-002;I'm *H*ere!
+B-002-007-003;*R*eady to *L*isten?
+B-002-007-004;Y looks like a fork in the road.
+B-002-007-005;*S*ignal *B*elow what I can receive
+B-002-007-006;WhoZZaT?
+B-002-007-007;Who's *M*essing with my signal?
+B-002-007-008;That static sure is *N*oisy
+B-002-007-009;*R*eceive *S*lower!!!
+B-002-007-010;WhoZZaT?
+B-002-007-011;Our paths will Xross again.
+B-002-008-001;Duh.
+B-002-008-002;They'll feel better if they know someone heard the call.
+B-002-008-003;MAY I declare an emergency?
+B-002-008-004;Some abbreviations were invented for CW - which is morse.
+B-002-008-005;Basic rules and manners still apply.
+B-002-008-006;Duh
+B-002-008-007;You only need one of these to operate if you already have a handheld.
+B-002-008-008;What is simplest?
+B-002-008-009;What is the best way to assist?
+B-002-008-010;There are emergencies, then there are serious emergencies when someone needs to be rescued
+B-002-008-011;duh
+B-002-009-001;*S*end *L*etter confirming we communicated.
+B-002-009-002;Which do you think is most useful for ham?
+B-002-009-003;They only ever talk about one type of map in the material
+B-002-009-004;Looking around the earth, think of the two opposite ways to reach something.
+B-002-009-005;*S*end *L*etter!
+B-002-009-006;Try the other direction.
+B-002-009-007;Are you going to log contacts, say, when you're jabbering with a bunch of people while driving?
+B-002-009-008;Which is most useful if you want to reach someone on a map?
+B-002-009-009;You should know this. UTC is often referred to as GMT.
+B-002-009-010;You should know this. One of the answers is useful.
+B-002-009-011;Radio guys will see the radio source as most useful.
+B-003-001-001;The earlier you filter, the better.
+B-003-001-002;Amplifier is part of the transceiver and may be generating some of the crap that needs to be filtered
+B-003-001-003;Radiation is radio, You remove unrequired radio by filtering.
+B-003-001-004;You need to measure effectiveness. By measuring SWR.
+B-003-001-005;You switch between antenna and dummy load for testing.
+B-003-001-006;Impedances vary with frequency. When you change frequency, you're... tuning...
+B-003-001-007;When you're adjusting, you don't want things to go to air.
+B-003-001-008;HF is low compared to... VHF and UHF.
+B-003-001-009;HF is low compared to VHF and UHF
+B-003-002-001;Where does your speech come in to the system>
+B-003-002-002;Power coming out of a microphone is riduculously low.
+B-003-002-003;After the speech in in and amplified, we need to turn it into a radio signal.
+B-003-002-004;If it's between a couple of odd components and it's not obvious, it's probably an oscillator
+B-003-002-005;Three of the answer don't make sense if we're already past the oscillator.
+B-003-002-006;Cranking it up for transmission the last step before hitting the antenna
+B-003-002-007;Cranking it up for transmission the last step before hitting the antenna
+B-003-003-001;We need an amplifier in the receiver because those incoming signals are really, really weak
+B-003-003-002;Those signals coming into the antenna are really, really week.
+B-003-003-003;Local oscillator is a very plain signal with no info. So only one answer makes sense.
+B-003-003-004;If you're mixing, something very plain is part of the inputs
+B-003-003-005;If we're going to start amplifying something that came in from the antenna, we should clean it up first.
+B-003-003-006;We filter out crap before we _______, then we need to make sure we didnt _________ too much
+B-003-003-007;Gotta make sure we didn't over _____________
+B-003-003-008;This is FM, A big part of its immunity to interference is that is picks the frequency with the highest amplitude within the bandwidth.
+B-003-003-009;If it's going to the speaker or the headphones, we gotta be able to hear it!
+B-003-003-010;What does an audio amplifier hook up to at your house?
+B-003-004-001;Driver/buffer is there for the telegraph key. Something has to generate the tone that will go through the key.
+B-003-004-002;Not a trick question. What supplies DC current?
+B-003-004-003;It's CW, and we want to keep something from the power amp.
+B-003-004-004;You only have one control on a CW (morse) transmitter.
+B-003-004-005;Last step before the antenna is always cranking up the power
+B-003-004-006;Last step before the antenna is always cranking up the power
+B-003-005-001;Last step before the antenna is always cranking up the power
+B-003-005-002;Oscillator isn't an answer. What would we want to mix with the oscillator in a receiver?
+B-003-005-003;Oscillator isn't an anwer. We have a radio signal and an oscillator, So what do we do with the two of them?
+B-003-005-004;A mixer always has two things connected to it.
+B-003-005-005;Before we amplify, it's gotta be clean
+B-003-005-006;We usually filter before we ____________
+B-003-005-007;Just looking at the words, one answer makes sense.
+B-003-005-008;If the questions is a crapshot, always go for the oscillator.
+B-003-005-009;We're talking output of a receiver here
+B-003-005-010;What do we hook audio amplifier to at your house?
+B-003-006-001;SSB if for AM. AM is for single frequency. And look! There's an oscillator as an answer!
+B-003-006-002;I know what three of these are, and neither reqires a filter
+B-003-006-003;Balanced modulator takes out the AM spike but leaves both sidebands.
+B-003-006-004;It's a transmitter. It's a speech (audio) amplifier.
+B-003-006-005;Modulator is creating RF from audio. Where does the audio come from?
+B-003-006-006;Oscillator and mixer are always a good combination.
+B-003-006-007;Osillator usually connected to mixer.
+B-003-006-008;We always jack up the signal before hitting the __________
+B-003-007-001;C'mon. See if you can guess this one. COM-PU-TER.
+B-003-007-002;What do you normally hook a modem to?
+B-003-007-003;Transceiver handles RF. Computer handles digital. What do we put between the two
+B-003-007-004;Computer digital . Radio analog. Audio signals are analog.
+B-003-007-005;What interface on a computer can read an analog signal?
+B-003-008-001;It's a source. A source of something is an ____________ to that thing.
+B-003-008-002;We're talking power supply here. Big power supplies have a ______________
+B-003-008-003;Gotta turn that AC into DC
+B-003-008-004;It's rectified, but it's still wobbly
+B-003-008-005;Filter is last stage in making it DC. But we still have to control the DC level.
+B-003-008-006;It it's hit the regulator, it's ready to go.
+B-003-009-001;Obviously not three of the answers.
+B-003-009-002;Three elements: Driven element, Reflector, Director. Think of the way it points.
+B-003-009-003;Reflector. Driven Element. Director. Think of the way it points.
+B-003-009-004;Reflector. Driven Element. Director. Think of the way it points.
+B-003-010-001;Which requires least, which most?
+B-003-010-002;Only one answer makes any sense.
+B-003-010-003;Read the answers. Obvious.
+B-003-010-004;Sorry, memorize.
+B-003-010-005;Receiver. For SSB, which did a lot of signal filtering before transmission.
+B-003-010-006;There's some simple math here.
+B-003-010-007;A carrier signal will be a single, narrow frequency.
+B-003-010-008;QUALITY is key in the question.
+B-003-010-009;SSB bandwidth for audio is 3 KHz or less.
+B-003-010-010;For CW (morse) we can tune down to a very narrow band.
+B-003-010-011;CW requires pretty narrow range.
+B-003-011-001;Morse is messy. Brute force on off switch. Creates a lot of crap voltage spikes.
+B-003-011-002;Morse is messy. Brute force on off switch. Creates a lot of crap voltage spikes.
+B-003-011-003;*V*ariable *F*requency *O*scillator.
+B-003-011-004;We convey/transmit the signal by modulating it. We're changing the amplitude to modulate it.
+B-003-011-005;Changing the AMPLITUDE for MODULATING purposes.
+B-003-011-006;CW. Crash wave.
+B-003-011-007;We always match everything to the antenna to get maximum power through.
+B-003-011-008;Any mismatch problem means less power going out.
+B-003-011-009;Stable. Must be stable. Oscillator is in charge of oscillating at a given frequency.
+B-003-011-010;What always seems to happen to waster power?
+B-003-011-011;Where does power almost always end up when it's wasted?
+B-003-012-001;Gain too high will spread out the signal
+B-003-012-002;SSB/AM is messy. How does it spread out?
+B-003-012-003;You see PEP all the time when talking about final power output.
+B-003-012-004;SSB is voice. Doesn't need too much
+B-003-012-005;Balanced modulator creates the AM modulation output - the two sidebands with the spike in the middle
+B-003-012-006;Why to we bother suppressing anything in SSB...or, in this case, *double* sideband?
+B-003-012-007;AM/SSB tends to spread out. And now we have even more power.
+B-003-012-008;Manners again. Least power possible.
+B-003-012-009;We want SSB, not full AM. So what do we need?
+B-003-012-010;The carrier is one of the things removed from AM modulation to create SSB.
+B-003-012-011;ALC is there to control level of audio input
+B-003-013-001;FM receiver always picks up the strongest signal and ignores the others.
+B-003-013-002;Too much power. Too much gain.
+B-003-013-003;Overdeviating. You're spreading out over too much bandwidth.
+B-003-013-004;Nothing coming in, so nothing to modulator.
+B-003-013-005;It's all about signal quality
+B-003-013-006;You start with enough bandwidth for voice. Then widen it by +5 and -5 deviation
+B-003-013-007;Too much gain = splatter (widening the signal)
+B-003-013-008;Reactance is a characteristic of capacitors and inductors
+B-003-013-009;FM voice doesn't need much, but then you have that allowed deviation
+B-003-013-010;Clearly too much gain.
+B-003-013-011;FM only picks up the strongest frequency within the frequency band
+B-003-014-001;What kind of components would we use to make the on/off key less sloppy?
+B-003-014-002;Duh.
+B-003-014-003;Duh.
+B-003-014-004;It's not transmitting, so it has to do something with all that power
+B-003-014-005;Learn it.
+B-003-014-006;You're processing speech. Why would we bother?
+B-003-014-007;You're at 100%. Not over, not under.
+B-003-014-008;Three of the answers make no sense.
+B-003-014-009;We're switching between antennas. That means something.
+B-003-014-010;We can't have both operating at the same time on one antenna.
+B-003-014-011;What can you also use as a mike?
+B-003-015-001;You're still sharing a frequency, so like voice, you have to take turns.
+B-003-015-002;Packet requires acks. From the intended receiver.
+B-003-015-003;D2D.
+B-003-015-004;We have a whole networf of repeaters! Across the country!
+B-003-015-005;PAcket radio... for *transmitting* data, usually from a...
+B-003-015-006;Modulate... so we're sending, not receiving... so how do we get the signal into the radio?
+B-003-015-007;Gee... morse/CW is a form of data transmission too.
+B-003-015-008;Three don't make sense
+B-003-015-009;Three of the answers are protocols. One is a modulation technique.
+B-003-015-010;You don't want to repeat unless you've established a connection and want it repeated.
+B-003-015-011;Too much audio. Too much gain.
+B-003-016-001;You should know this
+B-003-016-002;Those + and - terminals mean something.
+B-003-016-003;It's being recharged, so you're using it to store electrical energy.
+B-003-016-004;EMF is another term for voltage.
+B-003-016-005;Car has lead-acid battery. "Conventional" flashlight battery means alkaline or even crappier old stuff.
+B-003-016-006;If the battery is providing current, then it's part of the circuit
+B-003-016-007;Carbon-zinc is the really old stuff, not some fancy new thing. "Inexpensive" is the gimme in this question.
+B-003-016-008;You're *exceeding*, so you're pulling more current than the rating in a given amount of time..
+B-003-016-009;Piling them up (series) increases VOLTAGE (add up the voltages for each cell)
+B-003-016-010;Series connection adds up the voltages of the individual cells/batteries.
+B-003-016-011;Three of these are no problem for li-ion, which is in most laptops, and phones.
+B-003-017-001;What's different in how you hook it up at home vs  in the car?
+B-003-017-002;Just like a PC. House current is 120V. What components gives your computer board the 5V/12V it wants?
+B-003-017-003;Think of which one requires a lot of power.
+B-003-017-004;Key elements in this question: *AC powered*  and *transmitter*.
+B-003-017-005;P = V x I. You want more than the minimum.
+B-003-017-006;*AC* Current. *A*node to *C*athode. Don't forget that electrons flow in the opposite direction of what we call 'current'.
+B-003-017-007;Pulsating DC is AC with everything going the same way (no more negative)
+B-003-017-008;Remember this.
+B-003-017-009;10 feet, 0.5 voltage drop max, so max .05 V per foot. But... there is an overall max current for each wire gauge
+B-003-017-010;Fuse is to protect from drawing too much power.
+B-003-017-011;*LOW* frequency. Way below RF frequencies.
+B-003-018-001;Which do you think will prevent usage?
+B-003-018-002;Which do you think will really prevent someone from using it?
+B-003-018-003;Why do you put a lock and key on things?
+B-003-018-004;Duh. High Voltage.
+B-003-018-005;As little as...
+B-003-018-006;Which one do we revive with electric shock?
+B-003-018-007;100 volts is well known to be dangerous enough, so it will be something lower.
+B-003-018-008;Which makes sense?
+B-003-018-009;Which makes sense?
+B-003-018-010;Which is the most cautious and makes sense?
+B-003-018-011;While supply (that's *power supply*) is operating...
+B-003-019-001;Everything and everyone should be well grounded.
+B-003-019-002;You want something that connects to real ground... and that won't blow up
+B-003-019-003;"Chassis" is the case, and usually metal. And you touch it.
+B-003-019-004;Best conductor possible to get that current to ground
+B-003-019-005;Electrical safety is an electrical code issue.
+B-003-019-006;GReeN stuff GRows on the GRouNd
+B-003-019-007;Remember: ground ca also be part of antenna.
+B-003-019-008;The less wire is exposed to the RF energy, the less chance you have of picking it up.
+B-003-019-009;You always need ground. Shortest path best. Long wire will pick up RF.
+B-003-019-010;Chassis is metal. It needs an escape path for any current that reaches it so it doesn't go through the meat sack.
+B-003-019-011;You do remember what the third prong on the plug is for, right?
+B-003-020-001;Grounding is always to protect from harm from unexpected electrical sources.
+B-003-020-002;Line to ground should always be as short as possible. And please deal with lightning before it gets into your house.
+B-003-020-003;JUST UNPLUG EVERYTHING... EXCEPT GROUND!
+B-003-020-004;This is safety stuff and involves a lot of workplace standards.
+B-003-020-005;Let's see. It's equipment to ARREST a FALL.
+B-003-020-006;Remember: lots of power there. You want to dramatically reduce chance of accidental touching.
+B-003-020-007;If you need help with this answer, you probably weren't wearing a hard hat when something fell on your head earlier.
+B-003-020-008;Lots of power though the wire. Like, microwave-levels.
+B-003-020-009;Microwave levels of power here. What does that do?
+B-003-020-010;SAFETY precaution. And don't forget that even ground wires can carry RF and shock you.
+B-003-020-011;People should not touch transmitting antennae.
+B-003-021-001;You don't have to touch transmitting antenna to be burned. Just close enough.
+B-003-021-002;Antenna location is always a safety issue.
+B-003-021-003;ALWAYS ALWAYS ALWAYS disconnect equipment before working on it.
+B-003-021-004;Antenna location is always a safety issue first/
+B-003-021-005;Antenna location is always a safety issue first.
+B-003-021-006;RF is often microwave. Microwave heats things.
+B-003-021-007;RF/microwave loves water. Which part is most likely to heat water?
+B-003-021-008;RF/microwave main effect is to heat stuff that contains water.
+B-003-021-009;Antenna location is always a safety issue first.
+B-003-021-010;Antenna location is always a safety issue first.
+B-003-021-011;Antenna location is always a safety issue first.
+B-004-001-001;Increasing level of signal. As in, making it louder.
+B-004-001-002;It's one of the characteristics of an amplifier's rating
+B-004-001-003;We want to crank up RADIO (RF) signal to an antenna.
+B-004-001-004;We're increasing the signal from a microphone...
+B-004-001-005;We're only talking speech here, but enough to make it clear.
+B-004-001-006;One of these doesn't make sense. The others are related.
+B-004-001-007;Only one of these is a ratio, to indicate how much power increases.
+B-004-001-008;Gain is a ratio of the power of something coming in to the power coming out
+B-004-001-009;Gain is a ratio of how much a signal changes relative to its source.
+B-004-001-010;It's power. Increasing either one of the components of power also increases power.
+B-004-001-011;Amp adds more power. It might mess things up, but it adds power.
+B-004-002-001;Zee Zener diode controsl zee voltage.
+B-004-002-002;We can't recover what isn't in there.
+B-004-002-003;Zee Zeber diode controls zee voltage.
+B-004-002-004;We're taking that part of the wave that goes below 0V and turning it up.
+B-004-002-005;It's like a battery, with a + side and a - side.
+B-004-002-006;Diode is a one-way current valve.
+B-004-002-007;Trick question. Electrons flow opposite direction of current.
+B-004-002-008;Which one of these is a *semiconductor*, which is generally solid and small?
+B-004-002-009;Zee Zener diode controls zee voltage.
+B-004-002-010;Diode allows the current to go forward but not backwards
+B-004-003-001;Only one of these is an amplifier
+B-004-003-002;Key here is *semiconductor* amplifier.
+B-004-003-003;*B*illy *C*an *E*at *PiNeaPples*
+B-004-003-004;What is it called when we crank up a signal?
+B-004-003-005;A transistor is an amplifier, so it needs an in, an out, and something to control it.
+B-004-003-006;It's not any of the other three...
+B-004-003-007;It's bipolar, so the two answers will look like opposites of each other.
+B-004-003-008;This can destroy anything in electronics.
+B-004-003-009;Three of these are inputs or outputs. That leaves the control element.
+B-004-003-010;Collection plate in church.
+B-004-003-011;Cathode Emits Electrons.
+B-004-004-001;We're dealing with a different type of transistor here - but it still has a channel.
+B-004-004-002;Funny how the letters in the answer and question are next to each other.
+B-004-004-003;Which one sounds like a control element.
+B-004-004-004;If it enters, it's coming from the...
+B-004-004-005;FET. GDS. (Adjacent letters). With one sounds like an exit point?
+B-004-004-006;FET: FET Emulates Tube
+B-004-004-007;Which one sounds like it controls something?
+B-004-004-008;Only one of these sounds like it would *reduce* things.
+B-004-004-009;Billy Can Eat Pineapples for PNP. One letter off for FET.
+B-004-004-010;CEBu is a city in the PhilliPPiNes. Collector, emitter, base. Which sounds like a drain?
+B-004-004-011;FET. GDS (adjacent letters). Only two of the answer pairs are FET components.
+B-004-005-001;There's a reason we still use tubes. Look at how those things light up.
+B-004-005-002;Look at how those thigs light up.
+B-004-005-003;There's a fundamental reason we use tubes or transistors in audio equipment.
+B-004-005-004;Serve up that power on a plate.
+B-004-005-005;Hmmm... wire mesh... sounds like a...
+B-004-005-006;If you're plate it too hot, you'll burn your hands.
+B-004-005-007;Electrons always come from the negative side, which is the...
+B-004-005-008;What do we usually call tubes?
+B-004-005-009;Keep it simple.
+B-004-006-001;Those colours have to mean something.
+B-004-006-002;Those colours have to mean something.
+B-004-006-003;4th band is all alone, on the opposite side. One stripe not enough for possible range of resistor values.
+B-004-006-004;Calculate it.
+B-004-006-005;Just look at it!
+B-004-006-006;You want it very accurate.
+B-004-006-007;If it doesn't matter, it doesn't matter as long as your close.
+B-004-006-008;Vague question, since it can vary depending on the resistor.
+B-004-006-009;You should have memorized this.
+B-004-006-010;Hmmm... those two values have a different number of zeros on the end.
+B-004-006-011;If you remember the stripe positon/meanings, this questions is a gimme.
+B-005-001-001;Basic math.
+B-005-001-002;Basic math.
+B-005-001-003;Basic math.
+B-005-001-004;Basic math.
+B-005-001-005;Basic math.
+B-005-001-006;Basic math.
+B-005-001-007;Basic math.
+B-005-001-008;Basic math.
+B-005-001-009;Basic math.
+B-005-001-010;Basic math.
+B-005-001-011;Basic math.
+B-005-002-001;You should know this.
+B-005-002-002;Things that burn are a bad idea.
+B-005-002-003;There's a reason resistors have a power rating.
+B-005-002-004;There's a reason they use it for most wiring.
+B-005-002-005;You should know this.
+B-005-002-006;It's letting electricity through, so it has little
+B-005-002-007;Just remember this.
+B-005-002-008;If it's a terrible resistor, it's a good....
+B-005-002-009;Every component eats some voltage
+B-005-002-010;Voltage and current alone are meaningless
+B-005-002-011;You want a decent insulator
+B-005-003-001;Three don't make sense
+B-005-003-002;Which is using the most power?
+B-005-003-003;What's the power?
+B-005-003-004;You should know this.
+B-005-003-005;You should know this.
+B-005-003-006;What's the power?
+B-005-003-007;You need both to measure power.
+B-005-003-008;You need both to measure power.
+B-005-003-009;three of the answers are meaningless in this context.
+B-005-003-010;What does a resistor do with the power?
+B-005-003-011;Heat dissipatio = power dissipation
+B-005-004-001;Ohm's law
+B-005-004-002;Ohm's law
+B-005-004-003;Ohm's law
+B-005-004-004;Ohm's law
+B-005-004-005;Ohm's law
+B-005-004-006;Ohm's law
+B-005-004-007;Ohm's law
+B-005-004-008;Ohm's law
+B-005-004-009;Ohm's law
+B-005-004-010;Ohm's law
+B-005-004-011;Ohm's law
+B-005-005-001;voltage is spread across the components.
+B-005-005-002;Like water through parallel pipes.
+B-005-005-003;Think of water through pipes.
+B-005-005-004;Resistors in series + ohms law.
+B-005-005-005;We have a section of narrow pipe... and we add more narrow pipe on the end.
+B-005-005-006;Resistance in series.
+B-005-005-007;Resistors in series.
+B-005-005-008;Resistors in parallel.
+B-005-005-009;Resistors in parallel.
+B-005-005-010;Ohm's law. If it's allowing twice the current...
+B-005-005-011;Think of water flow branced to multiple pipes
+B-005-006-001;There's a reason some resistors with same value are big monsters
+B-005-006-002;Power depends on voltage *and* current
+B-005-006-003;Power depends on voltage *and* current
+B-005-006-004;We're spreading the flow across two resistors in series. Same current flowing through both.
+B-005-006-005;We're spreading the low across two resistors in parallel
+B-005-006-006;ohms law, and power.
+B-005-006-007;Share the load across a parallel connection
+B-005-006-008;Power is dependent on voltage and current.
+B-005-006-009;Ohms law and power formula.
+B-005-006-010;You should know this by now.
+B-005-006-011;Resistor's rating is based on how much power it can handle
+B-005-007-001;How frequent are the waves?
+B-005-007-002;20/20 vision and 20/20 hearing!
+B-005-007-003;20/20 vision and 20/20 hearing. Why do you think we would call them *audio* frequencies?
+B-005-007-004;7125 Khz. That's 7.1 MHz (megahertz). KHz and MHz sound like things they say about radio stations.
+B-005-007-005;One complete cycle. That's like one complete wave. How long is it?
+B-005-007-006;Frequency is number of cycles/waves per second. We're stuffing more into that one second.
+B-005-007-007;Frequency is number of cycles/waves per second. We're stuffing more into that one second.
+B-005-007-008;Hz is the number of cycles/waves per second.
+B-005-007-009;Hz is cycles/waves per second. if we have 100 waves in one second...
+B-005-007-010;Hz is waves per second. If each wave takes 0.1 (or 1/10) of a second...
+B-005-007-011;Harmonics are even multiples of a frequency.
+B-005-008-001;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-002;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-003;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-004;S is the first letter of "six". S meter goes 1 to 9, and after that everything is 10.
+B-005-008-005;S is the first letter of "dix". S meter goes 1 to 9, and after that everything is 10.
+B-005-008-006;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-007;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-008;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-009;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-010;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-008-011;JUST MEMORIZE THIS! DB increase is a ratio, not an absolute value.  DOUBLE POWER IS +3DB. 10X power is +10 dB.
+B-005-009-001;Inductor symbol looks like squiggly resistance symbol
+B-005-009-002;Inductor symbol looks like a squiggly resistor.
+B-005-009-003;Think of capacitors as opposite of inductors
+B-005-009-004;Think of capacitors as opposite of inductors and resistors.
+B-005-009-005;Four factors for coil.
+B-005-009-006;Four factors make sense based on the material provided.
+B-005-009-007;Think of capacitors as opposite of inductors and resistors.
+B-005-009-008;Think of inductors as squiggly capacitors.
+B-005-009-009;Think of capacitors as opposite of inductors and resistors.
+B-005-009-010;Think of capacitors as opposite of inductors and resistors.
+B-005-009-011;Think of capacitors as opposite of inductors or resistors.
+B-005-010-001;Remember: coil is opposite of capacitor, and capacitor symbol looks like fraction.
+B-005-010-002;Remember: coil is opposite of capacitor, and capacitor symbol looks like fraction.
+B-005-010-003;Remember: coil/inductor is opposite of capacitor, and capacitor symbol looks like fraction.
+B-005-010-004;Resistance *and* reactance. Both can impede current.
+B-005-010-005;Remember: coil/inductor is opposite of capacitor, and capacitor symbol looks like fraction.
+B-005-010-006;Remember: coil/inductor is opposite of capacitor, and capacitor symbol looks like fraction.
+B-005-010-007;Coil = inductor. Think of reactance formula.
+B-005-010-008;Think of capacitor reactance formula. And remember that capacitor symbol looks like a fracton
+B-005-010-009;Think of capacitor reactance formula. And remember that capacitor symbol looks like a fracton
+B-005-010-010;For little effect, there must be low reactance.
+B-005-010-011;Reactance formula for inductor,
+B-005-011-001;If there's no load (no circuit) that means there can't be any current on the secondary side.
+B-005-011-002;Power is the same on both sides (windings) of transformer
+B-005-011-003;Power is the same on both sides of transformer.
+B-005-011-004;Voltage proportional to number of turns.
+B-005-011-005;This is how we make electromagnets.
+B-005-011-006;Think big.
+B-005-011-007;What direction will upset it most?
+B-005-011-008;Current and voltage proportial to # turns. And it's asking about *primary* current.
+B-005-011-009;Play with magnets. Which ends attract and which repel?
+B-005-011-010;What are most magnets made of?
+B-005-011-011;When we get power loss, where does it usually go?
+B-005-012-001;The best match between the two.
+B-005-012-002;Parallel inductor and capacitor
+B-005-012-003;Resonance requires to things to agree
+B-005-012-004;"tuned circuit" means resonance.
+B-005-012-005;Coil (inductor) and capacitor combination.
+B-005-012-006;Inductor and capacitor in parallel
+B-005-012-007;Inductor and capacitor in series
+B-005-012-008;Resonance is based on inductance and capacitance.
+B-005-012-009;Think parallel inductor and capacitor
+B-005-012-010;Resonance happens when capacitors and inductor meet in the middle.
+B-005-012-011;Series LC circuit at resonance - think about it
+B-005-013-001;Voltage is potential drop across component or circuit
+B-005-013-002;Amps is current - just like water current. Ya gotta be in the middle of it to measure.
+B-005-013-003;Multi... multiple measurements...
+B-005-013-004;We're measuring *current*.
+B-005-013-005;Will a handheld be powered by batteries or wall plate current?
+B-005-013-006;You're measuring current
+B-005-013-007;You're measureing the flow (current). You have to be oin the middle of it.
+B-005-013-008;Potential is another term for....
+B-005-013-009;Flow. Like current.
+B-005-013-010;You measure voltage drop and current flow
+B-006-001-001;You're ready to transmit! How should you connect to the antenna?
+B-006-001-002;Capacitance is a factor in impedance. Diameter, distance between conductors all affect impedance.
+B-006-001-003;Impedance is not affected by the length of the transmission line.
+B-006-001-004;Multiple factors affect impedance of a wire.
+B-006-001-005;Only one of these is nicely wrapped.
+B-006-001-006;Attache the right resistance to the end of the cable, and you get zero reflection
+B-006-001-007;Three of the answers are characteristics of pretty much all electrical components and circuits.
+B-006-001-008;Three of the answers are characteristics of impedance on a line.
+B-006-001-009;All we know is that the impedance is "significantly different". We don't know in what way.
+B-006-001-010;Only one answer has two factors we know affect transmission line impedance.
+B-006-001-011;Only one answer has two factors we know affect transmission line impedance.
+B-006-002-001;You should know this.
+B-006-002-002;Parallel is the key word here
+B-006-002-003;They're separated by insulating rods
+B-006-002-004;Only one answer makes sense.
+B-006-002-005;Dipole is balanced, coax is unbalanced
+B-006-002-006;Unbalanced... so both connectors different
+B-006-002-007;Something to match balanced and unbalanced... hmmm....
+B-006-002-008;What's a coax look like anyway?
+B-006-002-009;Balanced. The same.
+B-006-002-010;Hmmm... gotta transform one impedance to another
+B-006-002-011;*Insulated* spreaders
+B-006-003-001;Only one answer has both properties make sense for a transmission line.
+B-006-003-002;One that's well insulated so it won't ground out it's signal on the metal objects.
+B-006-003-003;Think of advantages of coax.
+B-006-003-004;In general for connectors in the test, the higher number the better
+B-006-003-005;Hand-held is a SMAll radio.
+B-006-003-006;Just memorize this.
+B-006-003-007;If in doubt, go for the highest number connector
+B-006-003-008;Which will likely improve transmission?
+B-006-003-009;Only one is completely insulated
+B-006-003-010;Only one is completely insulated
+B-006-003-011;Twin-lead is kind of in the middle of coax and open-wire
+B-006-004-001;Only one makes sense for optimal transmission
+B-006-004-002;It's not lower impediance. Only coax good for burial and contact with metal objects. It's lower loss.
+B-006-004-003;Line loss comes from resistance in a cable. How can we reduce the cables resistance.
+B-006-004-004;Longer cable means more resistance
+B-006-004-005;Higher frequency requires more power
+B-006-004-006;If some power is being lost to heat...
+B-006-004-007;The one that can also handle most power... because it's losing less to heat
+B-006-004-008;It's going to be based on length, and the difference is a ratio
+B-006-004-009;Resistance of a cable is based on lenght, and it's linear.
+B-006-004-010;Higher frequency requires more power
+B-006-005-001;For max power to go through, what has to match?
+B-006-005-002;That's not too far from 1:1
+B-006-005-003;Poor contact means connection is unreliable.
+B-006-005-004;High SWR? Signal is not getting out
+B-006-005-005;SWR is a ratio of something easy to measure on the line
+B-006-005-006;Where's the heat coming from?
+B-006-005-007;Something's going to bounce back
+B-006-005-008;Standing waves are bouncing back
+B-006-005-009;How much gets reflected will also depend oh now much we're sending
+B-006-005-010;It's proportional to the impedance difference
+B-006-005-011;Which can handle most power/has lowest loss?
+B-006-006-001;3 of the answers make no sense.
+B-006-006-002;It's there to match up impedances.
+B-006-006-003;Only one will fix the mismatch.
+B-006-006-004;Impedance match always means a smooth flow
+B-006-006-005;Impedance match is best!
+B-006-006-006;Impedance match means things flow through nicely
+B-006-006-007;Impedance match means things flow through nicely
+B-006-006-008;Impedance matchmeans things flow through nicely
+B-006-006-009;What is affected by transmission line length>
+B-006-006-010;Matching impedance means things flow through nicely
+B-006-006-011;Transformer has to match it
+B-006-007-001;It's directly related to your antenna orientation
+B-006-007-002;Directly related to antenna orientation
+B-006-007-003;Director element orientation. No different from any other antenna.
+B-006-007-004;Polarization ased on orientatio of antenna
+B-006-007-005;Always related to orientation of antenna
+B-006-007-006;Iso: same. Tropic: direction. Same in all directions.
+B-006-007-007;Point source. Same in all directions.
+B-006-007-008;Reception works best if polarization matches
+B-006-007-009;Antenna orientation matches polarization
+B-006-007-010;Why would the wave change along the way?
+B-006-007-011;Reception best if transmitting/receiving antennas match in every way.
+B-006-008-001;Longer antenna better for longer wavelength. Longer wavelength = lower frequency
+B-006-008-002;Longer antenna better for longer wavelength. Longer wavelength = lower frequency
+B-006-008-003;Speed of light calculation
+B-006-008-004;You should have this memorized
+B-006-008-005;Inductor is a coil. It's like increasing the length of the antenna.
+B-006-008-006;Longer antenna better for longer wavelength. Longer wavelength = lower frequency
+B-006-008-007;You should now this by now.
+B-006-008-008;If you just added wire, it would make the antenna longer!
+B-006-008-009;Longer antenna better for longer wavelength. Longer wavelength = lower frequency
+B-006-008-010;Good trap has a spring coil and lots of capacity
+B-006-008-011;Speed of light calculaton
+B-006-009-001;The *driven* element is the only one being powered.
+B-006-009-002;A successful parasite is fatter.
+B-006-009-003;Think Yagi. If you put a shorter element than the driven, it directs in that direction.
+B-006-009-004;Like Yagi, longer element  is reflector
+B-006-009-005;Bandwidth is a frequency range.
+B-006-009-006;Di-pole. Di = 2. Pole looks like 1.
+B-006-009-007;Gain is always relative to a reference.
+B-006-009-008;Bandwidth is always a range or ranges of frequencies.
+B-006-009-009;Simple antennas radiate along the length, not from the tips.
+B-006-009-010;Gain is always relative to something. Isotropic is typical omnidirectional with no directional advantage.
+B-006-009-011;What you expect it to be. No specific points.
+B-006-010-001;Always start with speed of light. Divide by wavelength divisor.
+B-006-010-002;Speed of light / frequency  / divisor - but 286 for below 30 MHz
+B-006-010-003;Speed of light / freq / divisor. Use 286 for speed because...
+B-006-010-004;In most cases, better antenna = more gain.
+B-006-010-005;It's a vertical antenna. What it's mounted on doesn't matter for direction.
+B-006-010-006;50/50 change of getting this one right.
+B-006-010-007;You're on your own for this one.
+B-006-010-008;50/50 chance on ground plane antenna questions.
+B-006-010-009;It's vertical, so it looks the same from every direction.
+B-006-010-010;Coils and capacitors always affect impedance and reactance
+B-006-010-011;Just remember this.
+B-006-011-001;Always one driven element. The others react to it.
+B-006-011-002;Yagi driven is half wavelength - like most dipoles. It just happens to have other elements.
+B-006-011-003;Calculate driven element. Director is a bit shorter.
+B-006-011-004;Calculate driven element. Reflector is a bit longer
+B-006-011-005;Why else would you add more elements?
+B-006-011-006;Wider spacing give wider bandwidth.
+B-006-011-007;20 m very common. you want to reduce unwanted signals
+B-006-011-008;It's a Yagi. You want it because it directs power.
+B-006-011-009;Yagi is all about how you set up the elements.
+B-006-011-010;Is the a POINT TO the spacing of the Yagi elements?
+B-006-011-011;Doubling gain adds about 3 dBi.
+B-006-012-001;Speed of light / freq / divisor,
+B-006-012-002;Untuned always generates SWR/feedback
+B-006-012-003;It's never off then ends. It cycles through waves.
+B-006-012-004;You never see 100, 150 or 200 impedance
+B-006-012-005;Visualise ind. radiation always along length.
+B-006-012-006;When you change sape, you always increase flexibility/bandwidth
+B-006-012-007;It traps a few frequencies. But the consequence is harmonics for those.
+B-006-012-008;It traps a few frequencies. Different ones.
+B-006-012-009;Speed of light / freq / divider. But use 286
+B-006-013-001;think cube
+B-006-013-002;You fold them into triangles and squares so full wavelength doesn't take up so much space
+B-006-013-003;Full wavelength. Usual calculation. But 4 sides.
+B-006-013-004;Full wavelength. Divide by 4 for each side.
+B-006-013-005;Delta = triangle. Full wavelength, but each side is a third.
+B-006-013-006;You have full wavelength and a reflector element, so it's going to do some decent gain.
+B-006-013-007;Visualize. Four sides, so it will do equally well for both directions.
+B-006-013-008;You're now driving vertical, so...
+B-006-013-009;Front to back is always a lobe thing.
+B-006-013-010;You twist it into a square or triangle to get a full length of a wavelenght in there without moving to a house with a wider backyard.
+B-006-013-011;You twist'em into a triangle or square to get a full wavelenght without moving to a new back yard.
+B-007-001-001;VHF is used for FM radio and TV. Do they have a lot of range?
+B-007-001-002;Ground is close by. Parts of sky/atmosphere can be really high
+B-007-001-003;Ionosphere - it's there when you look up in the...
+B-007-001-004;VHF is used for FM and TV, which doesn't have a long reach
+B-007-001-005;The radio signal is bouncing off of something that has an electrical field
+B-007-001-006;Surface of the earth. What do we call that?
+B-007-001-007;200 KM is not very far, so probably not doing bounces off of the atmosphere
+B-007-001-008;You don't get ground wave for FM and TV stations on VHF and UHF
+B-007-001-009;Hmmm... ionosphere....
+B-007-001-010;It;s gonna take multiple bounces to get that far
+B-007-002-001;It forms in the daytime and dissipates at night
+B-007-002-002;It's fro the sun. What solar waves do we protect our skin from?
+B-007-002-003;The D regions is D closest to D earth. The F region is the Farthest.
+B-007-002-004;The D regions is D closest to D earth. The F region is the Farthest.
+B-007-002-005;The D regions is D closest to D earth. The F region is the Farthest.
+B-007-002-006;It's charge by the sun. When is the sun strongest?
+B-007-002-007;It charges up from the sun... and then discharges
+B-007-002-008;The D regions is D closest to D earth. The F region is the Farthest.
+B-007-002-009;Some signal absorbe*d* *d*uring *d*aytime
+B-007-002-010;Just remember this.
+B-007-002-011;The E region is *een* betw*een* the other two
+B-007-003-001;So we have a bounce. It anything reaching the area between the where you throw from and where it lands?
+B-007-003-002;F bounce goes *f*or *f*our thousand kilometers
+B-007-003-003;F bounce goes *f*or *f*our thousand kilometers, so E bounce is going to be one less
+B-007-003-004;When we skip, we're bouncing off of something.
+B-007-003-005;The signals are going to arrive at different times, so it's going to be a bit messy.
+B-007-003-006;How far it bounces depends on how far whatever is you're bouncing off of.
+B-007-003-007;The point where it *lands* (returns to earth)
+B-007-003-008;Skip = bounce. It's going to vary a bit. So if you're stating that it's being skipped, go for the minimum.
+B-007-003-009;It's related to bouncing.
+B-007-003-010;Angle between the *ground* and the radiation (not the antenna)
+B-007-003-011;We're bouncing off of something farther away.
+B-007-004-001;Signals are absorbeD by D region During Daylight
+B-007-004-002;Hmmm. Something is being absorbe*d* *during* *d*aylight hours
+B-007-004-003;If signal is being split up (two different paths), we'll be receiving less
+B-007-004-004;We're receiving less, but we're still receiving
+B-007-004-005;Questions says "changes". Doesn't say if they're good or bad.
+B-007-004-006;Signal might still be there, but weaker
+B-007-004-007;Ionosphere can really mess with a signal
+B-007-004-008;PHading is caused by PHase changes (or is Fading caused by Fase changes?)
+B-007-004-009;Fading is caused by uneven ionosphere. What do you think will happen if we're using a higher-bandwidth signal?
+B-007-004-010;One of the answers sounds like gibberish
+B-007-004-011;SSB is pretty low bandwidth
+B-007-005-001;The more solar activity, the more particles from the sun
+B-007-005-002;Just memorize this.
+B-007-005-003;Sun emits particles *and* radio waves
+B-007-005-004;Solur flux is the radio waves emitted by the sun
+B-007-005-005;Some communication doesn't depend on the ionosphere
+B-007-005-006;Only one answer makes any sense
+B-007-005-007;More charged particles! Thicker ionosphere!
+B-007-005-008;Extreme solar activity can blow out everything
+B-007-005-009;Just remember this
+B-007-005-010;What will vary the number of charged particles in the ionosphere?
+B-007-005-011;Hmmm...  it depends on the ionosphere, which depends on the sun, which has cycles of how many years?
+B-007-006-001;Not much there at higher altitudes to absorb things, so where does it go?
+B-007-006-002;What affects the ionosphere???
+B-007-006-003;It's maximum. And it's usable. Duh.
+B-007-006-004;Disturbance means more charged particles means stronger ionosphere affect
+B-007-006-005;300,000 meters/sec divided by 28 million cycles/sec = about 10 meters
+B-007-006-006;They're *below* the maximum frequency, so they're usable.
+B-007-006-007;20 metre (15 Mhz) good any time (*20 for* *24* hours a day). Frequencies be*low* work best when sun is *low*. Frequencies *high*er work best when sun is high.
+B-007-006-008;It's soooo high that it's not working anymore. Must have exceeded something.
+B-007-006-009;20 metre (15 Mhz) good any time (*20 for* *24* hours a day). Frequencies be*low* work best when sun is *low*. Frequencies *high*er work best when sun is high.
+B-007-006-010;Only one answer makes sense.
+B-007-006-011;20 metre (15 Mhz) good any time (think 24 hours a day). Frequencies be*low* work best when sun is *low*. Frequencies *high*er work best when sun is high.
+B-007-007-001;E affects seex (6)
+B-007-007-002;2 m is 150 MHz, in VHF UHF range. Not ionosphere.
+B-007-007-003;If troposphere, will not be lightning or aurora.
+B-007-007-004;Atmosphere. *Closest* to the earth. Tro is low.
+B-007-007-005;Anything in the D, E and F regions is caused by ionization.
+B-007-007-006;E affects seex.
+B-007-007-007;Where do you go to see the aurora borealis?
+B-007-007-008;Aurora BorEEEEEalis.
+B-007-007-009;It's going to be messy (think of aurora lights shifting in the sky), so lowest bandwidth will be most reliable.
+B-007-007-010;It's VHF, so you're not going to get the kind of distance you would from sky wave/bounce.
+B-007-007-011;It's VHF, so it doesn't get up to ionosphere.
+B-007-008-001;It's a receiver, what is it receiving?
+B-007-008-002;Week signal for odd distance. Something is odd
+B-007-008-003;Scatter. So signal will be lower and messy.
+B-007-008-004;It's scatter, so lots of things can happen to the wave.
+B-007-008-005;Scatter can go in many directions
+B-007-008-006;It's getting scattered into the skip zone, where it would not normally be.
+B-007-008-007;Scatter brings signals where you don't expect them, like in the skip zone.
+B-007-008-008;Gee, if it's being absorbed, it's not going anyway
+B-007-008-009;MEETEEOR AFFECTS SEEX (6)
+B-007-008-010;You can scatter in different directios
+B-007-008-011;MEETEEOR for SEEX (6).
+B-008-001-001;It can happen to new equipment in perfect shape
+B-008-001-002;Overload affects everything
+B-008-001-003;The TV, in this case, is a receiver.
+B-008-001-004;HF (high frequency) is lower frequency than VHF (very high frequency) and UHF (ultra-high frequency)
+B-008-001-005;Key: it's RECEPTION that's affected
+B-008-001-006;Inter-modulation. Not interference or distortion in the question.. So things are mixed together.
+B-008-001-007;You can hear the two signals mixed together
+B-008-001-008;Key here is two signals mixing.
+B-008-001-009;Proximity and same frequency are the issues here.
+B-008-001-010;You're running at a lower frequency than the TV is expecting.
+B-008-001-011;Intermodulation is a form of interference
+B-008-002-001;It's going to be some kind of filter, so we'll invariably have a coil (inductor),  capacitor or transformer
+B-008-002-002;Interference. Filter is always a good answer.
+B-008-002-003;Have you ever heard a public address system that didn't have distorted speech?
+B-008-002-004;Key here is that we're dealing with CW - morse code
+B-008-002-005;Only one of these answers uses terms that are in the material.
+B-008-002-006;Key here is that it's being *heard* across the *entire dial*.
+B-008-002-007;Your sound system can be pure audio, so it's not a normal antenna/receiver problem.
+B-008-002-008;When we talk about audio wires, this is always the best answer.
+B-008-002-009;Very similar to the grounding issue.
+B-008-002-010;Remember this. Always the best solution for audio wires.
+B-008-002-011;Why would a wire pick up a signal?
+B-008-003-001;Only one answer makes any sense.
+B-008-003-002;Only one answer makes obvious sense.
+B-008-003-003;Key here is that there's no characterisation of the type of emission in the question.
+B-008-003-004;No specific type of interference is identified in the question
+B-008-003-005;LOCAL interference is key here.
+B-008-003-006;Key clicks at DISTANT receiver
+B-008-003-007;DISTANCE.
+B-008-003-008;Interference. Filter is always a good answer.
+B-008-003-009;Parasites are always unwanted
+B-008-003-010;What's causin them is indeterminate
+B-008-003-011;It's in a amplifier, which is not tuned to any specific frequency.
+B-008-004-001;It's only happening on one or two channels, so it has to be a specific frequency or set of frequecies
+B-008-004-002;What is a harmonic?
+B-008-004-003;What is a harmonic?
+B-008-004-004;Multi-band is key.
+B-008-004-005;Hmmm... is one frequency a multiple or even divisor of another?
+B-008-004-006;If we're splattering, we're spreading out the signal.
+B-008-004-007;Calculate. What frequency if 15 meter band? Is it 60-66 MHz?
+B-008-004-008;We're over-driving the power (audio) amplifier, not the RF amplifier.
+B-008-004-009;*EXCESSIVE* harmonics
+B-008-004-010;Calculate it.
+B-008-004-011;Harmonics. Amplifier. General. Not specific harmonics.
+B-008-005-001;Harmonics are always higher multiple.
+B-008-005-002;Low pass filter, so it will eliminate higher frequency signals
+B-008-005-003;We're blocking low, we're blocking high
+B-008-005-004;IMPEDANCE SHOULD ALWAYS MATCH!!!
+B-008-005-005;Harmonics are always higher multiples of the intended frequency.
+B-008-005-006;Harmonics are always higher multiple frequencies of the wanted frequency.
+B-008-005-007;We're transmitting HF, TV is expecting VHF and UHF
+B-008-005-008;It will PASS a BAND of frequencies
+B-008-005-009;It's REJECTING a BAND of frequencies
+B-008-005-010;Where to we want to allow highest frequencies through>
+B-008-005-011;Transmitter, and high-pass, only one answer makes sense.

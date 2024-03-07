@@ -7,10 +7,11 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddServices(this IServiceCollection services) =>
         services
-            .AddTransient<QuestionService>()
             .AddTransient<MainPageViewModel>()
             .AddTransient<StatsPageViewModel>()
             .AddTransient<INavigationService, NavigationService>()
+            .AddSingleton<IQuestionService, QuestionService>()
+            .AddSingleton<IQuizService, QuizService>()
             .AddSingleton<IStudyDatabase, StudyDatabase>()
             .AddSingleton<MainPage>();
 }

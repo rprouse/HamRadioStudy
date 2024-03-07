@@ -8,6 +8,8 @@ public class Question
 
     public int CorrectAnswer { get; }
 
+    public string Hint { get; set; } = string.Empty;
+
     /// <summary>
     /// The section of the question.  This is the first 3 digits of the question id.
     /// There are 8 sections. If the Question is B-001-002, the section is 001.

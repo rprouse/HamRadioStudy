@@ -1,101 +1,56 @@
 using HamRadioStudy.Models;
+using HamRadioStudy.Utilities;
 
 namespace HamRadioStudy.Services;
 
-public class QuestionService
+public class QuestionService : IQuestionService
 {
-    private static readonly Random _rand = new (Environment.TickCount);
-    private readonly List<Question> _questions;
-    private readonly IStudyDatabase _studyDatabase;
+    public IReadOnlyList<Question> Questions { get; }
 
-    public QuestionService(IStudyDatabase studyDatabase, bool english = true)
+    public QuestionService(bool english = true)
     {
         var offset = english ? 0 : 5;
-
-        // Load basic_questions.txt into a list of questions from a resource file
-        var assembly = typeof(Question).Assembly;
-        var resourceStream = assembly
-            .GetManifestResourceStream("HamRadioStudy.Resources.Data.basic_questions.txt") 
-            ?? throw new InvalidDataException("Resource not found");
-
-        using var reader = new StreamReader(resourceStream);
-        _questions = reader.ReadToEnd()
-            .Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
-            .Skip(1)
-            .Select(line => line.Split(';'))
-            .Select(parts => new Question(
-                parts[0 + offset],
-                parts[1 + offset],
-                parts[2 + offset],
-                parts.Skip(3 + offset).Take(3).ToArray()
-            ))
-            .ToList();
-        _studyDatabase = studyDatabase;
+        Questions = LoadQuestions(offset);
+        LoadHints();
     }
-
-    /// <summary>
-    /// The total number of questions
-    /// </summary>
-    public int QuestionCount => _questions.Count;
 
     /// <summary>
     /// Get the number of questions in a given category
     /// </summary>
     /// <param name="category"></param>
     /// <returns></returns>
-    public int CategoryQuestionCount(int category) => 
-        _questions.Count(q => q.Category == category);
+    public int CategoryQuestionCount(int category) =>
+        Questions.Count(q => q.Category == category);
 
     /// <summary>
-    /// Returns all the questions in a random order
+    /// Load basicQuestions.txt into a list of questions from a resource file
     /// </summary>
-    public IEnumerable<Question> AllQuestions() =>
-        _questions.OrderBy(_ => _rand.Next());
+    /// <param name="offset">Offset to load Enlish (0) or French (1)</param>
+    /// <returns></returns>
+    private static List<Question> LoadQuestions(int offset) =>
+            "HamRadioStudy.Resources.Data.basic_questions.txt".GetResourceLines()
+                .Skip(1)
+                .Select(line => line.Split(';'))
+                .Select(parts => new Question(
+                    parts[0 + offset],
+                    parts[1 + offset],
+                    parts[2 + offset],
+                    parts.Skip(3 + offset).Take(3).ToArray()
+                ))
+                .ToList();
 
-    /// <summary>
-    /// Returns a random selection of questions
-    /// </summary>
-    public IEnumerable<Question> GetQuestions(int count) =>
-        _questions.OrderBy(_ => _rand.Next()).Take(count);
-
-    public IEnumerable<Question> PracticeExam()
+    private void LoadHints()
     {
-        // Get 100 questions, one from each section/category
-        var numSections = _questions.Max(q => q.Section);
-        for (var nSec = 1; nSec <= numSections; nSec++)
+        var hints = "HamRadioStudy.Resources.Data.hints_en.txt".GetResourceLines()
+            .Select(line => line.Split(';'))
+            .ToDictionary(parts => parts[0], parts => parts[1]);
+
+        foreach (var question in Questions)
         {
-            var section = _questions.Where(q => q.Section == nSec);
-            var numCategories = section.Max(q => q.Category);
-            for (var nCat = 1; nCat <= numCategories; nCat++)
+            if (hints.TryGetValue(question.Id, out var hint))
             {
-                var category = section.Where(q => q.Category == nCat);
-                yield return category.ElementAt(_rand.Next(category.Count()));
+                question.Hint = hint;
             }
         }
     }
-
-    public async Task<IEnumerable<Question>> GetQuestionsAnsweredIncorrectly(int count)
-    {
-        var incorrect = await _studyDatabase.GetIncorrectlyAnsweredQuestions();
-        return incorrect.Count == 0 ? 
-            GetQuestions(count) :
-            incorrect
-                .Select(i => _questions.First(q => q.Id == i.QuestionId))
-                .OrderBy(_ => _rand.Next())
-                .Take(count);
-    }
-
-    public async Task<IEnumerable<Question>> GetQuestionsFromWorstSection(int count)
-    {
-        var section = await _studyDatabase.GetWorstSection();
-        return section == 0 ?
-            GetQuestions(count) :
-            GetQuestionsFromSection(section, count);
-    }
-
-    public IEnumerable<Question> GetQuestionsFromSection(int section, int count) =>
-        _questions
-            .Where(q => q.Section == section)
-            .OrderBy(_ => _rand.Next())
-            .Take(count);
 }
