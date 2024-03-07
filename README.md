@@ -15,6 +15,7 @@ as of February 2024._
 - Review question that you got wrong
 - Review the section that your are weakest in
 - View statistics of your test results
+- Quizes from [YLab's Free Canadian Amateur Radio License Training Class](https://www.ylab.ca/radioclass/). Make sure you check out their great learning materials and YouTube videos.
 
 ## Main Screen
 

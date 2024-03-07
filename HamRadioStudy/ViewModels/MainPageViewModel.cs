@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Windows.Input;
 using HamRadioStudy.Models;
 using HamRadioStudy.Services;
@@ -43,4 +44,20 @@ public class MainPageViewModel : BaseViewModel
         await vm.InitializeAsync();
         await _navigationService.NavigateToAsync(vm);
     });
+
+    public ICommand OpenWebsiteCommand => 
+        new Command<string>(async (uri) => await OpenWebsite(uri));
+
+    private static async Task OpenWebsite(string uri)
+    {
+        try
+        {
+            await Launcher.OpenAsync(new Uri(uri));
+        }
+        catch (Exception ex)
+        {
+            // Handle any exceptions
+            Debug.WriteLine(ex.ToString());
+        }
+    }    
 }
