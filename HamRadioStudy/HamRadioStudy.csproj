@@ -93,6 +93,7 @@
   <ItemGroup>
     <None Remove="Resources\Data\basic_questions.txt" />
     <None Remove="Resources\Data\hints_en.txt" />
+    <None Remove="Resources\Data\ylab_quizzes.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -100,6 +101,7 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Data\hints_en.txt" />
+    <EmbeddedResource Include="Resources\Data\ylab_quizzes.txt" />
   </ItemGroup>
 
   <ItemGroup>

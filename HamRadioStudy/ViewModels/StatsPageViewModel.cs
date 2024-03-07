@@ -20,14 +20,14 @@ public class Statistic
         (int)Math.Round((double)CorrectAnswers / AnsweredQuestions * 100) : 0;
 }
 
-public class StatsPageViewModel(IStudyDatabase db, QuestionService questionService) : BaseViewModel
+public class StatsPageViewModel(IStudyDatabase db, IQuestionService questionService) : BaseViewModel
 {
     private readonly IStudyDatabase _db = db;
-    private readonly QuestionService _questionService = questionService;
+    private readonly IQuestionService _questionService = questionService;
 
     public async Task InitializeAsync()
     {
-        Overall = new Statistic(await _db.GetCorrectAnswers(), await _db.GetAnsweredQuestions(), _questionService.QuestionCount);
+        Overall = new Statistic(await _db.GetCorrectAnswers(), await _db.GetAnsweredQuestions(), _questionService.Questions.Count);
         B001 = new Statistic(await _db.GetSectionCorrectAnswers(1), await _db.GetSectionAnsweredQuestions(1), _questionService.CategoryQuestionCount(1));
         B002 = new Statistic(await _db.GetSectionCorrectAnswers(2), await _db.GetSectionAnsweredQuestions(2), _questionService.CategoryQuestionCount(2));
         B003 = new Statistic(await _db.GetSectionCorrectAnswers(3), await _db.GetSectionAnsweredQuestions(3), _questionService.CategoryQuestionCount(3));

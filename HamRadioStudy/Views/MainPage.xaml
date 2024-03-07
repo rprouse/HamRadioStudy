@@ -28,16 +28,16 @@
         </Grid.ColumnDefinitions>
         <Picker x:Name="TestTypePicker"
           Grid.Column="0"
-          ItemsSource="{Binding TestTypes}"
-          SelectedItem="{Binding SelectedTestType}"
+          ItemsSource="{Binding Quizes}"
+          SelectedItem="{Binding SelectedQuiz}"
           SelectedIndex="0"
           Margin="0,0,10,0">
         </Picker>
         <Button
           Text="TX" 
           Grid.Column="1"
-          Command="{Binding TakeTestCommand}"
-          CommandParameter="{Binding SelectedTestType}"
+          Command="{Binding TakeQuizCommand}"
+          CommandParameter="{Binding SelectedQuiz}"
           Padding="40,0"
           Style="{StaticResource Menu}" />
       </Grid>
