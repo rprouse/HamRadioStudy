@@ -7,8 +7,9 @@
              x:DataType="vm:StatsPageViewModel">
   <ScrollView>
     <VerticalStackLayout Padding="0" Spacing="8">
+      
       <Frame Style="{StaticResource StatHeadlineFrame}">
-        <Label Text="📈 Overall Statistics" Style="{StaticResource StatHeadline}"/>
+        <Label Text="Overall Statistics" Style="{StaticResource StatHeadline}"/>
       </Frame>
       <Label Style="{StaticResource Statistic}">
         <Label.Text>
@@ -21,17 +22,16 @@
       </Label>
 
       <Frame Style="{StaticResource StatHeadlineFrame}">
-        <Label Text="📻 Section Statistics" Style="{StaticResource StatHeadline}"/>
+        <Label Text="Section Statistics" Style="{StaticResource StatHeadline}"/>
       </Frame>
 
-      <local:StatisticView BindingContext="{Binding B001}" />
-      <local:StatisticView BindingContext="{Binding B002}" />
-      <local:StatisticView BindingContext="{Binding B003}" />
-      <local:StatisticView BindingContext="{Binding B004}" />
-      <local:StatisticView BindingContext="{Binding B005}" />
-      <local:StatisticView BindingContext="{Binding B006}" />
-      <local:StatisticView BindingContext="{Binding B007}" />
-      <local:StatisticView BindingContext="{Binding B008}" />
+      <StackLayout BindableLayout.ItemsSource="{Binding Sections}">
+        <BindableLayout.ItemTemplate>
+          <DataTemplate>
+            <local:StatisticView BindingContext="{Binding .}" />
+          </DataTemplate>
+        </BindableLayout.ItemTemplate>
+      </StackLayout>
 
     </VerticalStackLayout>
   </ScrollView>

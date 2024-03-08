@@ -4,7 +4,7 @@
              xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
              x:Class="HamRadioStudy.Views.StatisticView"
              x:DataType="vm:StatisticViewModel">
-  <VerticalStackLayout Padding="0" Spacing="8">
+  <VerticalStackLayout Padding="0" Spacing="0">
 
       <Label Text="{Binding Title}" Style="{StaticResource StatSubHeadline}" />
       <BoxView Style="{StaticResource StatSubHeadlineBoxView}" />
@@ -17,5 +17,6 @@
           </MultiBinding>
         </Label.Text>
       </Label>
+    
   </VerticalStackLayout>
 </ContentView>
