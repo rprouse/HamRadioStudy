@@ -1,9 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace HamRadioStudy.Views;
 
 public class StackedProgressBar : ContentView
@@ -96,10 +90,7 @@ public class StackedProgressBar : ContentView
         _progressBarGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(percentage3, GridUnitType.Star) });
 
         _progressBarGrid.Add(new BoxView { Color = Color1 }, 0, 0);
-        if (Value2 > 0) // Ensure there's a second value to display
-        {
-            _progressBarGrid.Add(new BoxView { Color = Color2 }, 1, 0);
-        }
+        _progressBarGrid.Add(new BoxView { Color = Color2 }, 1, 0);
         _progressBarGrid.Add(new BoxView { Color = Color3 }, 2, 0);
     }
 }

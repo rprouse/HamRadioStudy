@@ -12,6 +12,7 @@ public class Statistic
         AnsweredQuestions = answered;
         TotalQuestions = total;
     }
+
     public int CorrectAnswers { get; }
     public int AnsweredQuestions { get; }
     public int TotalQuestions { get; }
