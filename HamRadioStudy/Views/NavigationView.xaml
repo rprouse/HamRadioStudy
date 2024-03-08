@@ -2,10 +2,12 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:HamRadioStudy.ViewModels;assembly=HamRadioStudy"
+             xmlns:local="clr-namespace:HamRadioStudy.Views;assembly=HamRadioStudy"
              x:Class="HamRadioStudy.Views.NavigationView"
              x:DataType="vm:NavigationViewModel">
   <Grid Margin="{OnIdiom Phone='10', Tablet='15', Desktop='20', Default='15'}">
     <Grid.RowDefinitions>
+      <RowDefinition Height="14" />
       <RowDefinition Height="*" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
@@ -13,11 +15,25 @@
       <ColumnDefinition Width="*" />
       <ColumnDefinition Width="*" />
     </Grid.ColumnDefinitions>
+
+    <local:StackedProgressBar
+      Grid.Row="0"
+      Grid.Column="0"
+      Grid.ColumnSpan="2"
+      Value1="{Binding Correct}"
+      Value2="{Binding Incorrect}"
+      Color1="#4CA169"
+      Color2="#DB3A34"
+      Color3="{AppThemeBinding Light={StaticResource PrimaryDarkContrast}, Dark={StaticResource PrimaryContrast}}"
+      Maximum="{Binding OverallTotal}"
+      Margin="0,0,0,8"
+    />
+
     <Label VerticalOptions="Center"
            HorizontalOptions="Start"
            FontSize="14"
            LineBreakMode="WordWrap"
-           Grid.Row="0"
+           Grid.Row="1"
            Grid.Column="0" >
       <Label.Text>
         <MultiBinding StringFormat="{}{0:F0}% correct ({1} of {2})">
@@ -31,7 +47,7 @@
            HorizontalOptions="Start"
            FontSize="12"
            LineBreakMode="WordWrap"
-           Grid.Row="1"
+           Grid.Row="2"
            Grid.Column="0" >
       <Label.Text>
         <MultiBinding StringFormat="{}{0:F1}% answered ({1} of {2})">
@@ -41,10 +57,11 @@
         </MultiBinding>
       </Label.Text>
     </Label>
+    
     <Button
       x:Name="NextButton"
       IsEnabled="{Binding QuestionAnswered}"
-      Grid.Row="0"
+      Grid.Row="1"
       Grid.Column="1"
       Grid.RowSpan="2"
       Text="Next"
