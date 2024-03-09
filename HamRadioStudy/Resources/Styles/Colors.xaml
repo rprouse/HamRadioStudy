@@ -26,6 +26,7 @@
   <Color x:Key="DarkGreen">#4CA169</Color>
   <Color x:Key="Peach">#FFC49B</Color>
   <Color x:Key="Poppy">#DB3A34</Color>
+  <Color x:Key="DarkPoppy">#A72C27</Color>
 
   <Color x:Key="Gray100">#E1E1E1</Color>
   <Color x:Key="Gray200">#C8C8C8</Color>

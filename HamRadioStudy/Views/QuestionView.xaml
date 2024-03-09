@@ -14,6 +14,7 @@
     <Button      
         x:Name="AnswerA"
         Text="{Binding Answers[0]}"
+        Style="{StaticResource Question}"
         Clicked="OnAnswerClicked"
         LineBreakMode="WordWrap"
         HorizontalOptions="FillAndExpand" />
@@ -21,6 +22,7 @@
     <Button      
         x:Name="AnswerB"
         Text="{Binding Answers[1]}"
+        Style="{StaticResource Question}"
         Clicked="OnAnswerClicked"
         LineBreakMode="WordWrap"
         HorizontalOptions="FillAndExpand" />
@@ -28,6 +30,7 @@
     <Button      
         x:Name="AnswerC"
         Text="{Binding Answers[2]}"
+        Style="{StaticResource Question}"
         Clicked="OnAnswerClicked"
         LineBreakMode="WordWrap"
         HorizontalOptions="FillAndExpand" />
@@ -35,6 +38,7 @@
     <Button      
         x:Name="AnswerD"
         Text="{Binding Answers[3]}"
+        Style="{StaticResource Question}"
         Clicked="OnAnswerClicked"
         LineBreakMode="WordWrap"
         HorizontalOptions="FillAndExpand" />

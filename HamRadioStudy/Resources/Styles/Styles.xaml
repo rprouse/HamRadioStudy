@@ -49,6 +49,21 @@
     </Setter>
   </Style>
 
+  <Style TargetType="Button" x:Key="Question">
+    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource Primary}}" />
+    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}" />
+  </Style>
+
+  <Style TargetType="Button" x:Key="QuestionCorrect">
+    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource Primary}}" />
+    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource DarkGreen}, Dark={StaticResource LightGreen}}" />
+  </Style>
+
+  <Style TargetType="Button" x:Key="QuestionIncorrect">
+    <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource OffWhite}, Dark={StaticResource Primary}}" />
+    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource DarkPoppy}, Dark={StaticResource Poppy}}" />
+  </Style>
+
   <Style TargetType="CheckBox">
     <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource OffWhite}}" />
     <Setter Property="MinimumHeightRequest" Value="44"/>
