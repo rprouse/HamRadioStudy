@@ -7,79 +7,46 @@ public partial class QuestionView : ContentView
 {
     private bool _answered = false;
 
-    private readonly Color _correctColor;
-    private readonly Color _incorrectColor;
-    private readonly Color _buttonColor;
+    private readonly Style _questionStyle;
+    private readonly Style _questionCorrectStyle;
+    private readonly Style _questionIncorrectStyle;
 
     public QuestionView()
-	{
-		InitializeComponent();
-
-        // I would prefer to get these out of the colors.xaml resource dictionary
-        // but I'm not sure how to do that in a ContentView
-        _buttonColor = Application.Current?.RequestedTheme switch
-        {
-            AppTheme.Dark => Color.FromArgb("#9BD1E5"),
-            AppTheme.Light => Color.FromArgb("#434371"),
-            _ => Color.FromArgb("#9BD1E5")
-        };
-
-        _correctColor = Application.Current?.RequestedTheme switch
-        {
-            AppTheme.Dark => Color.FromArgb("#70EE9C"),
-            AppTheme.Light => Color.FromArgb("#4CA169"),
-            _ => Color.FromArgb("#70EE9C")
-        };
-
-        _incorrectColor = Color.FromArgb("#DB3A34");
+    {
+        InitializeComponent();
+        _questionStyle = GetStyle("Question");
+        _questionCorrectStyle = GetStyle("QuestionCorrect");
+        _questionIncorrectStyle = GetStyle("QuestionIncorrect");
     }
 
     private async void OnAnswerClicked(object sender, EventArgs e)
     {
-        if (BindingContext is not Question question ||
-            sender is not Button button ||
-            _answered)
+        if (_answered ||
+            BindingContext is not Question question ||
+            sender is not Button button)
         {
             return;
         }
 
+        int answer = GetAnswer(button);
+        if (answer == -1) return;
+
         _answered = true;
 
-        // Check which answer was clicked
-        // by comparing the sender to the buttons
-        var answer = button switch
-        {
-            _ when button == AnswerA => 0,
-            _ when button == AnswerB => 1,
-            _ when button == AnswerC => 2,
-            _ when button == AnswerD => 3,
-            _ => -1
-        };
+        // Highlight the correct answer
+        Button? correctButton = GetButton(question.CorrectAnswer);
 
-        if (question.CorrectAnswer == answer)
+        // Correct answer
+        if (correctButton is not null)
         {
-            // Correct answer
-            button.BackgroundColor = _correctColor;
+            correctButton.Style = _questionCorrectStyle;
         }
-        else
+
+        if (question.CorrectAnswer != answer)
         {
-            // Incorrect answer
-            button.BackgroundColor = _incorrectColor;
-
-            // Highlight the correct answer
-            Button? correctButton = question.CorrectAnswer switch
-            {
-                0 => AnswerA,
-                1 => AnswerB,
-                2 => AnswerC,
-                3 => AnswerD,
-                _ => null
-            };
-
-            if (correctButton is not null)
-            {
-                correctButton.BackgroundColor = _correctColor;
-            }
+            Button? incorrectButton = GetButton(answer);
+            if (incorrectButton is not null)
+                incorrectButton.Style = _questionIncorrectStyle;
         }
 
         // Notify the parent QuestionsPage that an answer was given
@@ -94,9 +61,36 @@ public partial class QuestionView : ContentView
 
         _answered = false;
 
-        AnswerA.BackgroundColor = _buttonColor;
-        AnswerB.BackgroundColor = _buttonColor;
-        AnswerC.BackgroundColor = _buttonColor;
-        AnswerD.BackgroundColor = _buttonColor;
+        AnswerA.Style = _questionStyle;
+        AnswerB.Style = _questionStyle;
+        AnswerC.Style = _questionStyle;
+        AnswerD.Style = _questionStyle;
     }
+
+    private Style GetStyle(string styleName)
+    {
+        if (Application.Current?.Resources.TryGetValue(styleName, out object? styleValue) == true && styleValue is Style style)
+        {
+            return style;
+        }
+        return new Style(typeof(Button));
+    }
+
+    private int GetAnswer(Button button) => button switch
+    {
+        _ when button == AnswerA => 0,
+        _ when button == AnswerB => 1,
+        _ when button == AnswerC => 2,
+        _ when button == AnswerD => 3,
+        _ => -1
+    };
+
+    private Button? GetButton(int answer) => answer switch
+    {
+        0 => AnswerA,
+        1 => AnswerB,
+        2 => AnswerC,
+        3 => AnswerD,
+        _ => null
+    };
 }
