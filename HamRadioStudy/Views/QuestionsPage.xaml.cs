@@ -6,6 +6,7 @@ namespace HamRadioStudy;
 public partial class QuestionsPage : ContentPage
 {
     private readonly Queue<Question> _questions;
+    private Question _currentQuestion;
     private readonly NavigationViewModel _navViewModel;
     private readonly StudyDatabase _studyDatabase = new();
 
@@ -22,7 +23,7 @@ public partial class QuestionsPage : ContentPage
 
         // Set the first question
         if (_questions.Count > 0)
-            SetNextQuestion();
+            _currentQuestion = SetNextQuestion();
     }
 
     public async Task NextQuestion()
@@ -34,14 +35,15 @@ public partial class QuestionsPage : ContentPage
             await Navigation.PopAsync();
             return;
         }
-        SetNextQuestion();
+        _currentQuestion = SetNextQuestion();
     }
 
-    private void SetNextQuestion()
+    private Question SetNextQuestion()
     {
         _navViewModel.QuestionAnswered = false;
         var question = _questions.Dequeue();
         QuestionView.BindingContext = question;
+        return question;
     }
 
     public async Task AnswerQuestion(bool correct)
@@ -54,5 +56,13 @@ public partial class QuestionsPage : ContentPage
         }
         _navViewModel.QuestionAnswered = true;
         _navViewModel.AddAnswer(correct);
+    }
+
+    private async void OnHintClicked(object sender, EventArgs e)
+    {
+        if (_currentQuestion is not null)
+        {
+            await DisplayAlert("Hint", _currentQuestion.Hint, "OK");
+        }
     }
 }
