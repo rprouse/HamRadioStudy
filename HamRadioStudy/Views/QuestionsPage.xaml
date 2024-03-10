@@ -9,9 +9,11 @@
   <ContentPage.ToolbarItems>
     <ToolbarItem Text="Hint" Order="Secondary" Clicked="OnHintClicked" />
   </ContentPage.ToolbarItems>
-  
-  <VerticalStackLayout Margin="{OnIdiom Phone='10', Tablet='15', Desktop='20', Default='15'}">
-    <views:QuestionView x:Name="QuestionView" HorizontalOptions="FillAndExpand" />
-    <views:NavigationView x:Name="NavigationView" HorizontalOptions="FillAndExpand" />
-  </VerticalStackLayout>
+
+  <ScrollView>
+    <VerticalStackLayout Margin="{OnIdiom Phone='10', Tablet='15', Desktop='20', Default='15'}">
+      <views:QuestionView x:Name="QuestionView" HorizontalOptions="FillAndExpand" />
+      <views:NavigationView x:Name="NavigationView" HorizontalOptions="FillAndExpand" />
+    </VerticalStackLayout>
+  </ScrollView>
 </ContentPage>
