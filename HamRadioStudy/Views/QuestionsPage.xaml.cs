@@ -6,7 +6,7 @@ namespace HamRadioStudy;
 public partial class QuestionsPage : ContentPage
 {
     private readonly Queue<Question> _questions;
-    private Question _currentQuestion;
+    private Question? _currentQuestion;
     private readonly NavigationViewModel _navViewModel;
     private readonly StudyDatabase _studyDatabase = new();
 

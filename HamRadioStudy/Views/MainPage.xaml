@@ -10,61 +10,139 @@
     <ToolbarItem Text="Statistics" Order="Secondary" Command="{Binding StatisticsCommand}" />
   </ContentPage.ToolbarItems>
 
-  <ScrollView>
-    <VerticalStackLayout Padding="20,0" Spacing="25">
-      <Image Source="tower.png" HeightRequest="185" Aspect="AspectFit" />
+  <ContentPage.Resources>
+    <ResourceDictionary>
 
-      <Label Text="Ham Radio Study"
-        Style="{StaticResource Headline}" />
-      
-      <Label Text="Practice questions for the Canadian Amateur Radio Operator Certificate Basic"
-        LineBreakMode="WordWrap"
-        Style="{StaticResource SubHeadline}" />
+      <!-- Landscape Layout -->
+      <ControlTemplate x:Key="LandscapeTemplate">
+        <Grid BindingContext="{Binding Source={RelativeSource TemplatedParent}, Path=BindingContext}">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+          </Grid.ColumnDefinitions>
+          <VerticalStackLayout Padding="20,0" Spacing="25" Grid.Column="0">
+            <Image Source="tower.png" HeightRequest="185" Aspect="AspectFit" />
 
-      <Grid HorizontalOptions="FillAndExpand">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Picker x:Name="TestTypePicker"
-          Grid.Column="0"
-          ItemsSource="{Binding Quizes}"
-          SelectedItem="{Binding SelectedQuiz}"
-          SelectedIndex="0"
-          Margin="0,0,10,0">
-        </Picker>
-        <Button
-          Text="TX" 
-          Grid.Column="1"
-          Command="{Binding TakeQuizCommand}"
-          CommandParameter="{Binding SelectedQuiz}"
-          Padding="40,0"
-          Style="{StaticResource Menu}" />
-      </Grid>
+            <Label Text="Ham Radio Study"
+              Style="{StaticResource Headline}" />
 
-      <Label
-        LineBreakMode="WordWrap"
-        Style="{StaticResource Caption}">
-        <Label.FormattedText>
-          <FormattedString>
-            <Span Text="YLab quizzes courtesy of " />
-            <Span Text="YLab's free online training class." TextDecorations="Underline">
-              <Span.GestureRecognizers>
-                <TapGestureRecognizer 
+          </VerticalStackLayout>
+          <VerticalStackLayout Padding="20,0" Spacing="25" Grid.Column="1">
+
+            <Label Text="Practice questions for the Canadian Amateur Radio Operator Certificate Basic"
+              LineBreakMode="WordWrap"
+              Style="{StaticResource SubHeadline}" />
+
+            <Grid HorizontalOptions="FillAndExpand">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+              <Picker x:Name="TestTypePicker"
+                Grid.Column="0"
+                ItemsSource="{Binding Quizes}"
+                SelectedItem="{Binding SelectedQuiz}"
+                SelectedIndex="0"
+                Margin="0,0,10,0">
+              </Picker>
+              <Button
+                Text="TX" 
+                Grid.Column="1"
+                Command="{Binding TakeQuizCommand}"
+                CommandParameter="{Binding SelectedQuiz}"
+                Padding="40,0"
+                Style="{StaticResource Menu}" />
+            </Grid>
+
+            <Label
+              LineBreakMode="WordWrap"
+              Style="{StaticResource Caption}">
+              <Label.FormattedText>
+                <FormattedString>
+                  <Span Text="YLab quizzes courtesy of " />
+                  <Span Text="YLab's free online training class." TextDecorations="Underline">
+                    <Span.GestureRecognizers>
+                      <TapGestureRecognizer 
                   NumberOfTapsRequired="1" 
                   Command="{Binding OpenWebsiteCommand}"
                   CommandParameter="https://www.ylab.ca/radioclass/" />
-              </Span.GestureRecognizers>
-            </Span>
-          </FormattedString>
-        </Label.FormattedText>
-      </Label>
+                    </Span.GestureRecognizers>
+                  </Span>
+                </FormattedString>
+              </Label.FormattedText>
+            </Label>
 
-      <Label
-        Text="This app is not affiliated with Innovation, Science and Economic Development Canada (ISED) or any other government agency. The questions are based on the official question bank current as of February 2024."
+            <Label
+              Text="This app is not affiliated with Innovation, Science and Economic Development Canada (ISED) or any other government agency. The questions are based on the official question bank current as of February 2024."
+              LineBreakMode="WordWrap"
+              Style="{StaticResource Caption}" />
+          </VerticalStackLayout>
+        </Grid>
+      </ControlTemplate>
+
+      <!-- Portrait Layout -->
+      <ControlTemplate x:Key="PortraitTemplate">
+        <VerticalStackLayout Padding="20,0" Spacing="25" BindingContext="{Binding Source={RelativeSource TemplatedParent}, Path=BindingContext}">
+          <Image Source="tower.png" HeightRequest="185" Aspect="AspectFit" />
+
+          <Label Text="Ham Radio Study"
+        Style="{StaticResource Headline}" />
+
+          <Label Text="Practice questions for the Canadian Amateur Radio Operator Certificate Basic"
         LineBreakMode="WordWrap"
-        Style="{StaticResource Caption}" />
-    </VerticalStackLayout>
+        Style="{StaticResource SubHeadline}" />
+
+          <Grid HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Picker x:Name="TestTypePicker"
+                Grid.Column="0"
+                ItemsSource="{Binding Quizes}"
+                SelectedItem="{Binding SelectedQuiz}"
+                SelectedIndex="0"
+                Margin="0,0,10,0">
+            </Picker>
+            <Button
+                Text="TX" 
+                Grid.Column="1"
+                Command="{Binding TakeQuizCommand}"
+                CommandParameter="{Binding SelectedQuiz}"
+                Padding="40,0"
+                Style="{StaticResource Menu}" />
+          </Grid>
+
+          <Label
+            LineBreakMode="WordWrap"
+            Style="{StaticResource Caption}">
+            <Label.FormattedText>
+              <FormattedString>
+                <Span Text="YLab quizzes courtesy of " />
+                <Span Text="YLab's free online training class." TextDecorations="Underline">
+                  <Span.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        NumberOfTapsRequired="1" 
+                        Command="{Binding OpenWebsiteCommand}"
+                        CommandParameter="https://www.ylab.ca/radioclass/" />
+                  </Span.GestureRecognizers>
+                </Span>
+              </FormattedString>
+            </Label.FormattedText>
+          </Label>
+
+          <Label
+            Text="This app is not affiliated with Innovation, Science and Economic Development Canada (ISED) or any other government agency. The questions are based on the official question bank current as of February 2024."
+            LineBreakMode="WordWrap"
+            Style="{StaticResource Caption}" />
+        </VerticalStackLayout>
+
+      </ControlTemplate>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ScrollView>
+    <ContentView x:Name="DynamicContent" />
   </ScrollView>
 
 </ContentPage>
