@@ -22,10 +22,7 @@
           </Grid.ColumnDefinitions>
           <VerticalStackLayout Padding="20,0" Spacing="25" Grid.Column="0">
             <Image Source="tower.png" HeightRequest="185" Aspect="AspectFit" />
-
-            <Label Text="Ham Radio Study"
-              Style="{StaticResource Headline}" />
-
+            <Label Text="Ham Radio Study" Style="{StaticResource Headline}" />
           </VerticalStackLayout>
           <VerticalStackLayout Padding="20,0" Spacing="25" Grid.Column="1">
 
@@ -63,9 +60,9 @@
                   <Span Text="YLab's free online training class." TextDecorations="Underline">
                     <Span.GestureRecognizers>
                       <TapGestureRecognizer 
-                  NumberOfTapsRequired="1" 
-                  Command="{Binding OpenWebsiteCommand}"
-                  CommandParameter="https://www.ylab.ca/radioclass/" />
+                        NumberOfTapsRequired="1" 
+                        Command="{Binding OpenWebsiteCommand}"
+                        CommandParameter="https://www.ylab.ca/radioclass/" />
                     </Span.GestureRecognizers>
                   </Span>
                 </FormattedString>
@@ -84,13 +81,11 @@
       <ControlTemplate x:Key="PortraitTemplate">
         <VerticalStackLayout Padding="20,0" Spacing="25" BindingContext="{Binding Source={RelativeSource TemplatedParent}, Path=BindingContext}">
           <Image Source="tower.png" HeightRequest="185" Aspect="AspectFit" />
-
-          <Label Text="Ham Radio Study"
-        Style="{StaticResource Headline}" />
+          <Label Text="Ham Radio Study" Style="{StaticResource Headline}" />
 
           <Label Text="Practice questions for the Canadian Amateur Radio Operator Certificate Basic"
-        LineBreakMode="WordWrap"
-        Style="{StaticResource SubHeadline}" />
+            LineBreakMode="WordWrap"
+            Style="{StaticResource SubHeadline}" />
 
           <Grid HorizontalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
