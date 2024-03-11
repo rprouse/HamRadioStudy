@@ -135,6 +135,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <MauiXaml Update="Views\MainPageBodyView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
+    <MauiXaml Update="Views\MainPageHeader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </MauiXaml>
     <MauiXaml Update="Views\QuestionsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>
