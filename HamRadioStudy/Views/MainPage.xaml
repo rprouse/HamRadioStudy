@@ -9,6 +9,7 @@
 
   <ContentPage.ToolbarItems>
     <ToolbarItem Text="Statistics" Order="Secondary" Command="{Binding StatisticsCommand}" />
+    <ToolbarItem Text="Backup Database" Order="Secondary" Command="{Binding BackupDatabaseCommand}" />
   </ContentPage.ToolbarItems>
 
   <ContentPage.Resources>

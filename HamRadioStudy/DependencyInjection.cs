@@ -1,3 +1,4 @@
+using CommunityToolkit.Maui.Storage;
 using HamRadioStudy.Services;
 using HamRadioStudy.ViewModels;
 
@@ -9,6 +10,7 @@ public static class DependencyInjection
         services
             .AddTransient<MainPageViewModel>()
             .AddTransient<StatsPageViewModel>()
+            .AddSingleton<IFileSaver>(FileSaver.Default)
             .AddTransient<INavigationService, NavigationService>()
             .AddSingleton<IQuestionService, QuestionService>()
             .AddSingleton<IQuizService, QuizService>()

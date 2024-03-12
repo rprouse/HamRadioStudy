@@ -19,6 +19,13 @@ namespace HamRadioStudy
             await _db.CreateTableAsync<AnsweredQuestion>();
         }
 
+        public async Task Close()
+        {
+            if (_db is not null)
+                await _db.CloseAsync();
+            _db = null;
+        }
+
         public async Task<int> SaveAnsweredQuestion(AnsweredQuestion answeredQuestion)
         {
             await Init();
