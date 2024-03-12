@@ -18,20 +18,20 @@ public class QuizService : IQuizService
         { "5", "Repeaters & Radiophones" },
         { "6", "Licensing & CrossBorder" },
         { "7", "Antenna Location Regulations" },
-        { "19", "Interference & Troubleshooting" },
-        { "18", "Frequencies Propagation & Atmospherics" },
-        { "17", "Advanced Antenna" },
-        { "16", "Transmission Lines & Antenna" },
-        { "15", "Inductors Capacitors & Transformers" },
-        { "14", "Energy & Gain" },
-        { "13", "Amps Transistors & Tubes" },
-        { "12", "Grounding & Safety" },
-        { "11", "Power & Batteries" },
-        { "10", "B&width Modulation & Data" },
-        { "8", "Modulation & Transceiver Components" },
-        { "20", "On Air Protocol" },
-        { "9", "Modulation & Transceiver Components Part 2" },
         { "7B", "Safety Guidelines" },
+        { "8", "Modulation & Transceiver Components" },
+        { "9", "Modulation & Transceiver Components Part 2" },
+        { "10", "B&width Modulation & Data" },
+        { "11", "Power & Batteries" },
+        { "12", "Grounding & Safety" },
+        { "13", "Amps Transistors & Tubes" },
+        { "14", "Energy & Gain" },
+        { "15", "Inductors Capacitors & Transformers" },
+        { "16", "Transmission Lines & Antenna" },
+        { "17", "Advanced Antenna" },
+        { "18", "Frequencies Propagation & Atmospherics" },
+        { "19", "Interference & Troubleshooting" },
+        { "20", "On Air Protocol" },
     };
 
     private readonly Dictionary<string, IList<Question>> _ylabQuizQuestions = [];
@@ -43,32 +43,30 @@ public class QuizService : IQuizService
         _studyDatabase = studyDatabase;
         _questionService = questionService;
 
+        const int quizSize = 20;
+
         Quizes = 
         [
-            new ("Quick Test", () => GetQuestions(20)),
-            new ("Review Mistakes", async () => await GetQuestionsAnsweredIncorrectly(20)),
-            new ("Practice Weakest Category", async () => await GetQuestionsFromWorstSection(20)),
-            new ("B-001 Regulations & Governance", () => GetQuestionsFromSection(1, 20)),
-            new ("B-002 Operating Procedures", () => GetQuestionsFromSection(2, 20)),
-            new ("B-003 Station Setup & Operations", () => GetQuestionsFromSection(3, 20)),
-            new ("B-004 Amplifiers & Signals", () => GetQuestionsFromSection(4, 20)),
-            new ("B-005 Measurements & Calculations", () => GetQuestionsFromSection(5, 20)),
-            new ("B-006 Transmission Lines & Impedance", () => GetQuestionsFromSection(6, 20)),
-            new ("B-007 Propagation", () => GetQuestionsFromSection(7, 20)),
-            new ("B-008 Interference & Filtering", () => GetQuestionsFromSection(8, 20))
+            new ("Quick Test", () => GetQuestions(quizSize)),
+            new ("Unanswered Questions", async () => await GetUnansweredQuestions(quizSize)),
+            new ("Review Mistakes", async () => await GetQuestionsAnsweredIncorrectly(quizSize)),
+            new ("Weakest Category", async () => await GetQuestionsFromWorstSection(quizSize)),
+            new ("Practice Exam", PracticeExam ),
+            new ("All Questions", AllQuestions),
+            new ("B-001 Regulations & Governance", () => GetQuestionsFromSection(1, quizSize)),
+            new ("B-002 Operating Procedures", () => GetQuestionsFromSection(2, quizSize)),
+            new ("B-003 Station Setup & Operations", () => GetQuestionsFromSection(3, quizSize)),
+            new ("B-004 Amplifiers & Signals", () => GetQuestionsFromSection(4, quizSize)),
+            new ("B-005 Measurements & Calculations", () => GetQuestionsFromSection(5, quizSize)),
+            new ("B-006 Transmission Lines & Impedance", () => GetQuestionsFromSection(6, quizSize)),
+            new ("B-007 Propagation", () => GetQuestionsFromSection(7, quizSize)),
+            new ("B-008 Interference & Filtering", () => GetQuestionsFromSection(8, quizSize))
         ];
 
         foreach (var (key, value) in _ylabQuizzes)
         {
             Quizes.Add(new ($"YLab {key} {value}", () => GetYLabQuiz(key)));
         }
-
-        Quizes.AddRange(
-        [
-            new ("Practice Exam", PracticeExam ),
-            new ("All Questions", AllQuestions)
-        ]);
-
         LoadYLabQuizzes();
     }
 
@@ -128,6 +126,17 @@ public class QuizService : IQuizService
                 .Select(i => _questionService.Questions.First(q => q.Id == i.QuestionId))
                 .OrderBy(_ => _rand.Next())
                 .Take(count);
+    }
+
+    private async Task<IEnumerable<Question>> GetUnansweredQuestions(int count)
+    {
+        var answered = await _studyDatabase.GetAnsweredQuestions();
+        var unanswered = _questionService.Questions
+            .Where(q => !answered.Any(a => a.QuestionId == q.Id))
+            .OrderBy(_ => _rand.Next())
+            .Take(count)
+            .ToList();
+        return unanswered.Count > 0 ? unanswered : await GetQuestionsAnsweredIncorrectly(count);
     }
 
     private async Task<IEnumerable<Question>> GetQuestionsFromWorstSection(int count)

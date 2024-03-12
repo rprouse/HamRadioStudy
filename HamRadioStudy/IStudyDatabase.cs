@@ -6,13 +6,15 @@ public interface IStudyDatabase
 {
     Task<int> SaveAnsweredQuestion(AnsweredQuestion answeredQuestion);
 
-    Task<int> GetAnsweredQuestions();
+    Task<int> GetAnsweredQuestionCount();
 
-    Task<int> GetCorrectAnswers();
+    Task<int> GetCorrectAnswerCount();
 
-    Task<int> GetSectionAnsweredQuestions(int section);
+    Task<int> GetSectionAnsweredQuestionCount(int section);
 
-    Task<int> GetSectionCorrectAnswers(int section);
+    Task<int> GetSectionCorrectAnswerCount(int section);
+
+    Task<IList<AnsweredQuestion>> GetAnsweredQuestions();
 
     Task<IList<AnsweredQuestion>> GetIncorrectlyAnsweredQuestions();
 

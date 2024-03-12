@@ -27,19 +27,19 @@ namespace HamRadioStudy
                 await _db.InsertAsync(answeredQuestion);
         }
 
-        public async Task<int> GetAnsweredQuestions()
+        public async Task<int> GetAnsweredQuestionCount()
         {
             await Init();
             return await _db.Table<AnsweredQuestion>().CountAsync();
         }
 
-        public async Task<int> GetCorrectAnswers()
+        public async Task<int> GetCorrectAnswerCount()
         {
             await Init();
             return await _db.Table<AnsweredQuestion>().Where(a => a.IsCorrect).CountAsync();
         }
 
-        public async Task<int> GetSectionAnsweredQuestions(int section)
+        public async Task<int> GetSectionAnsweredQuestionCount(int section)
         {
             await Init();
             var result = await _db
@@ -49,7 +49,7 @@ namespace HamRadioStudy
             return result.GroupBy(a => a.QuestionId).Count();
         }
 
-        public async Task<int> GetSectionCorrectAnswers(int section)
+        public async Task<int> GetSectionCorrectAnswerCount(int section)
         {
             await Init();
             var result = await _db
@@ -57,6 +57,16 @@ namespace HamRadioStudy
                 .Where(a => a.Section == section && a.IsCorrect)
                 .ToListAsync();
             return result.GroupBy(a => a.QuestionId).Count();
+        }
+
+        public async Task<IList<AnsweredQuestion>> GetAnsweredQuestions()
+        {
+            await Init();
+            var incorrect = await _db
+                .Table<AnsweredQuestion>()
+                .OrderBy(a => a.AnsweredAt)
+                .ToListAsync();
+            return incorrect.Distinct(new AnsweredQuestionComparer()).ToList();
         }
 
         public async Task<IList<AnsweredQuestion>> GetIncorrectlyAnsweredQuestions()
