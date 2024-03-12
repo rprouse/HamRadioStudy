@@ -15,4 +15,7 @@ public static class Constants
 
     public static string DatabasePath =>
         Path.Combine(FileSystem.AppDataDirectory, DatabaseFilename);
+
+    public static string DefaultBackupPath =>
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonDocuments), "HamStudyBackups");
 }
