@@ -8,8 +8,8 @@
              Title="">
 
   <ContentPage.ToolbarItems>
-    <ToolbarItem Text="Statistics" Order="Secondary" Command="{Binding StatisticsCommand}" />
-    <ToolbarItem Text="Backup Database" Order="Secondary" Command="{Binding BackupDatabaseCommand}" />
+    <ToolbarItem Text="Statistics" Order="Secondary" x:DataType="vm:MainPageViewModel" Command="{Binding StatisticsCommand}" />
+    <ToolbarItem Text="Backup Database" Order="Secondary" x:DataType="vm:MainPageViewModel" Command="{Binding BackupDatabaseCommand}" />
   </ContentPage.ToolbarItems>
 
   <ContentPage.Resources>
