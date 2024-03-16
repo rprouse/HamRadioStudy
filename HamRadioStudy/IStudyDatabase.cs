@@ -4,6 +4,8 @@ namespace HamRadioStudy;
 
 public interface IStudyDatabase
 {
+    Task Close();
+
     Task<int> SaveAnsweredQuestion(AnsweredQuestion answeredQuestion);
 
     Task<int> GetAnsweredQuestionCount();

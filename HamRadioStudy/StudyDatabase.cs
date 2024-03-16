@@ -19,6 +19,13 @@ namespace HamRadioStudy
             await _db.CreateTableAsync<AnsweredQuestion>();
         }
 
+        public async Task Close()
+        {
+            if (_db is not null)
+                await _db.CloseAsync();
+            _db = null;
+        }
+
         public async Task<int> SaveAnsweredQuestion(AnsweredQuestion answeredQuestion)
         {
             await Init();
@@ -30,13 +37,18 @@ namespace HamRadioStudy
         public async Task<int> GetAnsweredQuestionCount()
         {
             await Init();
-            return await _db.Table<AnsweredQuestion>().CountAsync();
+            var result = await _db.Table<AnsweredQuestion>().ToListAsync();
+            return result.Distinct(new AnsweredQuestionComparer()).Count();
         }
 
         public async Task<int> GetCorrectAnswerCount()
         {
             await Init();
-            return await _db.Table<AnsweredQuestion>().Where(a => a.IsCorrect).CountAsync();
+            var result = await _db
+                .Table<AnsweredQuestion>()
+                .Where(a => a.IsCorrect)
+                .ToListAsync();
+            return result.Distinct(new AnsweredQuestionComparer()).Count();
         }
 
         public async Task<int> GetSectionAnsweredQuestionCount(int section)
@@ -46,7 +58,7 @@ namespace HamRadioStudy
                 .Table<AnsweredQuestion>()
                 .Where(a => a.Section == section)
                 .ToListAsync();
-            return result.GroupBy(a => a.QuestionId).Count();
+            return result.Distinct(new AnsweredQuestionComparer()).Count();
         }
 
         public async Task<int> GetSectionCorrectAnswerCount(int section)
@@ -56,7 +68,7 @@ namespace HamRadioStudy
                 .Table<AnsweredQuestion>()
                 .Where(a => a.Section == section && a.IsCorrect)
                 .ToListAsync();
-            return result.GroupBy(a => a.QuestionId).Count();
+            return result.Distinct(new AnsweredQuestionComparer()).Count();
         }
 
         public async Task<IList<AnsweredQuestion>> GetAnsweredQuestions()
