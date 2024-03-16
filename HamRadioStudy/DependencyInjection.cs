@@ -11,7 +11,6 @@ public static class DependencyInjection
             .AddTransient<MainPageViewModel>()
             .AddTransient<StatsPageViewModel>()
             .AddSingleton<IFileSaver>(FileSaver.Default)
-            .AddSingleton<IFolderPicker>(FolderPicker.Default)
             .AddTransient<INavigationService, NavigationService>()
             .AddSingleton<IQuestionService, QuestionService>()
             .AddSingleton<IQuizService, QuizService>()

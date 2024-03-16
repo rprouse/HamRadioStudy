@@ -1,9 +1,6 @@
 using System.Diagnostics;
-using System.Text;
-using System.Threading;
 using System.Windows.Input;
 using CommunityToolkit.Maui.Alerts;
-using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Storage;
 using HamRadioStudy.Models;
 using HamRadioStudy.Services;
@@ -16,7 +13,6 @@ public class MainPageViewModel : BaseViewModel
     private readonly IServiceProvider _serviceProvider;
     private readonly IStudyDatabase _database;
     private readonly IFileSaver _fileSaver;
-    private readonly IFolderPicker _folderPicker;
     private TestType _selectedQuiz;
 
     public MainPageViewModel(
@@ -24,8 +20,7 @@ public class MainPageViewModel : BaseViewModel
         INavigationService navigationService,
         IServiceProvider serviceProvider,
         IStudyDatabase database,
-        IFileSaver fileSaver,
-        IFolderPicker folderPicker)
+        IFileSaver fileSaver)
     {
         _navigationService = navigationService;
         _serviceProvider = serviceProvider;
@@ -33,7 +28,6 @@ public class MainPageViewModel : BaseViewModel
         _selectedQuiz = Quizes[0];
         _database = database;
         _fileSaver = fileSaver;
-        _folderPicker = folderPicker;
     }
 
     public IList<TestType> Quizes { get; }
@@ -67,9 +61,8 @@ public class MainPageViewModel : BaseViewModel
     public ICommand BackupDatabaseCommand => new Command(async () =>
     {
         await _database.Close();
-        EnsureBackupFolderExists();
         using var stream = new FileStream(Constants.DatabasePath, FileMode.Open, FileAccess.Read);
-        var fileSaverResult = await _fileSaver.SaveAsync(Constants.DefaultBackupPath, Constants.DatabaseFilename, stream);
+        var fileSaverResult = await _fileSaver.SaveAsync(Constants.DatabaseFilename, stream);
         if (fileSaverResult.IsSuccessful)
         {
             await Toast.Make($"Backed up to: {fileSaverResult.FilePath}").Show();
@@ -83,20 +76,31 @@ public class MainPageViewModel : BaseViewModel
     public ICommand RestoreDatabaseCommand => new Command(async () =>
     {
         await _database.Close();
-        EnsureBackupFolderExists();
-        var result = await FolderPicker.Default.PickAsync(Constants.DefaultBackupPath);
-        if (result.IsSuccessful)
+
+        var options = new PickOptions
         {
-            var sourcePath = Path.Combine(result.Folder.Path, Constants.DatabaseFilename);
-            if (!File.Exists(sourcePath))
+            PickerTitle = $"Please select the {Constants.DatabaseFilename} backup"
+        };
+
+        var result = await FilePicker.PickAsync(options);
+        if (result is not null)
+        {
+            if (result.FileName != Constants.DatabaseFilename)
             {
-                await Toast.Make($"Database not found: {sourcePath}").Show();
+                await Toast.Make($"Invalid file selected: {result.FileName}").Show();
                 return;
             }
+
+            if (!File.Exists(result.FullPath))
+            {
+                await Toast.Make($"Database not found: {result.FullPath}").Show();
+                return;
+            }
+
             try
             {
-                File.Copy(sourcePath, Constants.DatabasePath, true);
-                await Toast.Make($"Restored from: {sourcePath}").Show();
+                File.Copy(result.FullPath, Constants.DatabasePath, true);
+                await Toast.Make($"Restored from: {result.FullPath}").Show();
             }
             catch (Exception ex)
             {
@@ -104,14 +108,6 @@ public class MainPageViewModel : BaseViewModel
             }
         }
     });
-
-    private void EnsureBackupFolderExists()
-    {
-        if (!Directory.Exists(Constants.DefaultBackupPath))
-        {
-            Directory.CreateDirectory(Constants.DefaultBackupPath);
-        }
-    }
 
     private static async Task OpenWebsite(string uri)
     {
