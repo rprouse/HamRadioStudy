@@ -6,6 +6,13 @@ public class Question
     public string QuestionText { get; }
     public string[] Answers { get; }
 
+    // Compiled bindings to an item in an array like Answers[0] crashes in release builds,
+    // so we need to use properties pointing to the array items.
+    public string Answer1 => Answers[0];
+    public string Answer2 => Answers[1];
+    public string Answer3 => Answers[2];
+    public string Answer4 => Answers[3];
+
     public int CorrectAnswer { get; }
 
     public string Hint { get; set; } = string.Empty;
