@@ -13,25 +13,25 @@
 
     <Button      
         x:Name="AnswerA"
-        Text="{Binding Answers[0]}"
+        Text="{Binding Answer1}"
         Style="{StaticResource Question}"
         Clicked="OnAnswerClicked" />
     
     <Button      
         x:Name="AnswerB"
-        Text="{Binding Answers[1]}"
+        Text="{Binding Answer2}"
         Style="{StaticResource Question}"
         Clicked="OnAnswerClicked" />
     
     <Button      
         x:Name="AnswerC"
-        Text="{Binding Answers[2]}"
+        Text="{Binding Answer3}"
         Style="{StaticResource Question}"
         Clicked="OnAnswerClicked" />
     
     <Button      
         x:Name="AnswerD"
-        Text="{Binding Answers[3]}"
+        Text="{Binding Answer4}"
         Style="{StaticResource Question}"
         Clicked="OnAnswerClicked" />
 
